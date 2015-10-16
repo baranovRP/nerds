@@ -108,11 +108,58 @@
     </div>
 
     <div class="about">
+      <div class="about-column-left">
+        <article>
+          <h1>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
 
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая
+            рук, как роботы.</p>
+
+          <div class="about-services">
+            <h2>Выполняем заказы на разработку:</h2>
+            <ul>
+              <li>Веб-сайтов любой сложности</li>
+              <li>Мобильных приложений для iOS и Android</li>
+              <li>Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+      <div class="about-column-right">
+        <figure class="about-logo">
+          <img src="http://placehold.it/187x75" width="187" height="75" alt="Лого дизайн-студии «Нёрдс»"/>
+        </figure>
+        <div class="about-founded">Since 2004</div>
+        <div class="about-description">
+          <div class="about-description-title">Как мы работаем:</div>
+          <ul>
+            <li>С самоотдачей 146%</li>
+            <li>Соблюдая сроки на 100%</li>
+            <li>По предоплате 50%</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <div class="clients">
-
+      <div class="client">
+        <a href="http://glukhanko.ru/">
+          <img src="http://placehold.it/198x37" width="198" height="37"
+               alt="Glukhanko design studio">
+        </a>
+      </div>
+      <div class="client">
+        <a href="https://htmlacademy.ru/">
+          <img src="http://placehold.it/199x68" width="199" height="68"
+               alt="Сервис интерактивного онлайн-обучения HTML Academy">
+        </a>
+      </div>
+      <div class="client">
+        <a href="http://barbershop-borodinski.ru/">
+          <img src="http://placehold.it/209x90" width="209" height="90"
+               alt="Барбершоп «Бородинский»">
+        </a>
+      </div>
     </div>
   </div>
 </div>
@@ -125,7 +172,32 @@
 
 <div class="main-footer">
   <div class="container clearfix">
+    <div class="footer-social">
+      <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+      <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+      <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
 
+      <div class="footer-title">Давайте дружить, это выгодно!</div>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+  </div>
+</div>
+
+<div class="feedback-form">
+  <div class="container clearfix">
+    <form action="/echo" method="post">
+      <label>Ваше имя:
+        <input type="text" name="name" id="feedback-name" value="Представьтесь, пожалуйста">
+      </label>
+      <label>Ваш e-mail:
+        <input type="text" name="email" id="feedback-email" value="Для отправки ответа">
+      </label>
+      <label>Текст письма:
+        <textarea name="" id="feedback-email-content" cols="30" rows="10">В свободной форме</textarea>
+      </label>
+      <input class="btn" type="submit" value="Отправить">
+      <button class="btn">Отмена</button>
+    </form>
   </div>
 </div>
 </body>
