@@ -41,10 +41,12 @@
       <form action="/echo" method="get">
         <div class="filter-manufactures">
           <div class="filter-manufactures-title">Производители:</div>
-          <div class="manufactures-list">
+          <div class="manufactures-list"> <-- [DL] Можно использовать тэг <fieldset>-->
             <div class="manufactures-item">
+              <-- [DL]  Кастомизировать будем таким образом: http://wtfforms.com/, добавь ещё спан в разметку. 
+              Блоки manufactures-item не нужны. Сделаем блочные лэйблы. -->
               <label>
-                <input type="checkbox" checked name="tick-baxter" id="baxter-checkbox">Baxter of California
+                <inpнut type="checkbox" checked name="tick-baxter" id="baxter-checkbox">Baxter of California
               </label>
             </div>
             <div class="manufactures-item">
@@ -76,8 +78,8 @@
         </div>
         <div class="filter-group-products">
           <div class="filter-group-products-title">Группы товаров:</div>
-          <div class="group-products-list">
-            <div class="group-products-item">
+          <div class="group-products-list"> <-- [DL]  Тоже самое-->
+            <div class="group-products-item"> <-- [DL]  Тоже самое-->
               <label>
                 <input type="radio" checked name="choose-group" value="shaving-accessories" id="shaving-radio">Бритвенные
                 принадлежности
@@ -168,7 +170,7 @@
           </figure>
         </div>
         <div class="item-content">
-          <div class="product-title">
+          <div class="product-title"> <-- [DL]  Повесь этот класс на h4, див лишний-->
             <h4>
               Глина для укладки волос<br>
               <span>«American crew»</span>
@@ -250,7 +252,7 @@
       <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
     </div>
     <div class="footer-copyright">
-      <p>Дизайн сайта:</p>
+      <p>Дизайн сайта:</p><-- [DL] можешь тоже поставить бр, вместо параграфа -->
       <a href="#" class="btn">htmlacademy.ru</a>
     </div>
   </div>
