@@ -40,7 +40,7 @@
     <div class="filters">
       <form action="/echo" method="get">
         <div class="filter-manufactures">
-          <div class="filter-manufactures-title">Производители:</div>
+          <h2 class="filter-manufactures-title">Производители:</h2>
           <fieldset class="manufactures-list">
             <label class="control checkbox">
               <input type="checkbox" checked name="tick-baxter" id="baxter-checkbox">Baxter of California
@@ -69,7 +69,7 @@
           </fieldset>
         </div>
         <div class="filter-group-products">
-          <div class="filter-group-products-title">Группы товаров:</div>
+          <h2 class="filter-group-products-title">Группы товаров:</h2>
           <fieldset class="group-products-list">
             <label class="control radio">
               <input type="radio" checked name="choose-group" value="shaving-accessories" id="shaving-radio">Бритвенные
@@ -93,18 +93,18 @@
     <div class="catalog">
       <article class="catalog-item">
         <div class="item-photo">
-          <figure class="product-photo"><-- [DL] Ром, давай <figure>, заменим на ссылку, эта область будет кликабельной-->
+          <a class="product-photo">
             <img src="http://placehold.it/220x165" width="220" height="165"
                  alt="Набор для путешествий «Baxter of California»">
-          </figure>
+          </a>
         </div>
         <div class="item-content">
-          <h4 class="product-title"> <-- [DL] Чтобы использовать h4, нужно, чтобы у тебя на странице были h2 и h3. 
-          Я бы предложил в h2 обернуть заголовки фильтров, а в h3 обернуть название продукта. 
-          И внутрь h3 ещё положить ссылку, чтобы пользователь мог по ней, например, попасть в карточку товара -->
-            Набор для путешествий<br>
-            <span>«Baxter of California»</span>
-          </h4> р
+          <h3 class="product-title">
+            <a href="#">Набор для путешествий<br>
+              <span>«Baxter of California»</span>
+            </a>
+          </h3>
+
           <div class="product-price-box">
             <span class="product-price">2 900 Руб.</span>
             <button class="btn buy-product" type="submit">Купить</button>
@@ -113,16 +113,17 @@
       </article>
       <article class="catalog-item">
         <div class="item-photo">
-          <figure class="product-photo">
+          <a class="product-photo">
             <img src="http://placehold.it/220x165" width="220" height="165"
                  alt="Увлажняющий кондиционер  «Baxter of California»">
-          </figure>
+          </a>
         </div>
         <div class="item-content">
-          <h4 class="product-title">
-            Увлажняющий кондиционер<br>
-            <span>«Baxter of California»</span>
-          </h4>
+          <h3 class="product-title">
+            <a href="#">Увлажняющий кондиционер<br>
+              <span>«Baxter of California»</span>
+            </a>
+          </h3>
 
           <div class="product-price-box">
             <span class="product-price">750 Руб.</span>
@@ -132,16 +133,17 @@
       </article>
       <article class="catalog-item">
         <div class="item-photo">
-          <figure class="product-photo">
+          <a class="product-photo">
             <img src="http://placehold.it/220x165" width="220" height="165"
                  alt="Гель для волос «Suavecito»">
-          </figure>
+          </a>
         </div>
         <div class="item-content">
-          <h4 class="product-title">
-            Гель для волос<br>
-            <span>«Suavecito»</span>
-          </h4>
+          <h3 class="product-title">
+            <a href="#">Гель для волос<br>
+              <span>«Suavecito»</span>
+            </a>
+          </h3>
 
           <div class="product-price-box">
             <span class="product-price">290 Руб.</span>
@@ -151,16 +153,17 @@
       </article>
       <article class="catalog-item">
         <div class="item-photo">
-          <figure class="product-photo">
+          <a class="product-photo">
             <img src="http://placehold.it/220x165" width="220" height="165"
                  alt="Глина для укладки волос «American crew»">
-          </figure>
+          </a>
         </div>
         <div class="item-content">
-          <h4 class="product-title">
-            Глина для укладки волос<br>
-            <span>«American crew»</span>
-          </h4>
+          <h3 class="product-title">
+            <a href="#">Глина для укладки волос<br>
+              <span>«American crew»</span>
+            </a>
+          </h3>
 
           <div class="product-price-box">
             <span class="product-price">500 Руб.</span>
@@ -170,16 +173,17 @@
       </article>
       <article class="catalog-item">
         <div class="item-photo">
-          <figure class="product-photo">
+          <a class="product-photo">
             <img src="http://placehold.it/220x165" width="220" height="165"
                  alt="Гель для волос «American crew»">
-          </figure>
+          </a>
         </div>
         <div class="item-content">
-          <h4 class="product-title">
-            Гель для волос<br>
-            <span>«American crew»</span>
-          </h4>
+          <h3 class="product-title">
+            <a href="#">Гель для волос<br>
+              <span>«American crew»</span>
+            </a>
+          </h3>
 
           <div class="product-price-box">
             <span class="product-price">300 Руб.</span>
@@ -189,16 +193,17 @@
       </article>
       <article class="catalog-item">
         <div class="item-photo">
-          <figure class="product-photo">
+          <a class="product-photo">
             <img src="http://placehold.it/220x165" width="220" height="165"
                  alt="Набор для бритья «Baxter of California»">
-          </figure>
+          </a>
         </div>
         <div class="item-content">
-          <h4 class="product-title">
-            Набор для бритья<br>
-            <span>«Baxter of California»</span>
-          </h4>
+          <h3 class="product-title">
+            <a href="#">Набор для бритья<br>
+              <span>«Baxter of California»</span>
+            </a>
+          </h3>
 
           <div class="product-price-box">
             <span class="product-price">3 900 Руб.</span>
