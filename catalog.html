@@ -31,10 +31,110 @@
   <div class="container clearfix">
     <div class="catalog-main">
       <div class="catalog-filters">
+        <form action="/echo" method="get">
+          <div class="filter-price">
+            <div class="filter-price-title">Стоимость:</div>
+            <img src="http://placehold.it/240x80" width="240" height="80" alt="Диапазон цены">
 
+            <div class="filter-price-range">
+              от <span>0</span> до <span>1500</span>
+            </div>
+          </div>
+
+          <div class="filter-grid">
+            <div class="filter-grid-title">Сетка:</div>
+            <fieldset class="filter-grid-list">
+              <label class="control radio">
+                <input type="radio" checked name="choose-grid" value="grid-adaptive" id="radio-adaptive">Адаптивная
+                <span class="control-indicator"></span>
+              </label>
+              <label class="control radio">
+                <input type="radio" name="choose-grid" value="grid-fixed" id="radio-fixed">Фиксированная
+                <span class="control-indicator"></span>
+              </label>
+              <label class="control radio">
+                <input type="radio" name="choose-grid" value="grid-rubber" id="radio-rubber">Резиновая
+                <span class="control-indicator"></span>
+              </label>
+            </fieldset>
+          </div>
+
+          <div class="filter-features">
+            <div class="filter-features-title">Особенности:</div>
+            <fieldset class="filter-features-list">
+              <label class="control checkbox">
+                <input type="checkbox" checked name="tick-slider" id="checkbox-slider">Слайдер
+                <span class="control-indicator"></span>
+              </label>
+              <label class="control checkbox">
+                <input type="checkbox" name="tick-advantages" id="checkbox-advantages">Блок преимуществ
+                <span class="control-indicator"></span>
+              </label>
+              <label class="control checkbox">
+                <input type="checkbox" checked name="tick-news" id="checkbox-news">Новости
+                <span class="control-indicator"></span>
+              </label>
+              <label class="control checkbox">
+                <input type="checkbox" name="tick-gallery" id="checkbox-gallery">Галерея
+                <span class="control-indicator"></span>
+              </label>
+              <label class="control checkbox">
+                <input type="checkbox" name="tick-basket" id="checkbox-basket">Корзина
+                <span class="control-indicator"></span>
+              </label>
+            </fieldset>
+          </div>
+
+          <input class="btn" type="submit" value="Показать">
+        </form>
       </div>
       <div class="catalog-content">
-
+        <div class="catalog-sort">
+          <div class="catalog-sort-title">Сортировать:</div>
+          <ul class="catalog-sort-content">
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По функционалу</a></li>
+          </ul>
+        </div>
+        <div class="catalog-gallery">
+          <div class="catalog-gallery-item">
+            <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
+            <a href="#">
+              <img src="http://placehold.it/240x240" width="240" height="240" alt="Сайт «Aviator»">
+            </a>
+          </div>
+          <div class="catalog-gallery-item active">
+            <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
+            <a href="#">
+              <img src="http://placehold.it/240x240" width="240" height="240" alt="Сайт «Sunset»">
+            </a>
+          </div>
+          <div class="catalog-gallery-item">
+            <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
+            <a href="#">
+              <img src="http://placehold.it/240x240" width="240" height="240" alt="Сайт «Forte»">
+            </a>
+          </div>
+          <div class="catalog-gallery-item">
+            <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
+            <a href="#">
+              <img src="http://placehold.it/240x240" width="240" height="240" alt="Сайт «Modern Organic Thai»">
+            </a>
+          </div>
+          <div class="catalog-gallery-item">
+            <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
+            <a href="#">
+              <img src="http://placehold.it/240x240" width="240" height="240" alt="Сайт «Avenue»">
+            </a>
+          </div>
+          <div class="catalog-gallery-item">
+            <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
+            <a href="#">
+              <img src="http://placehold.it/240x240" width="240" height="240" alt="Сайт «Dovetail»">
+            </a>
+          </div>
+        </div>
       </div>
     </div>
     <footer class="catalog-footer clearfix">
