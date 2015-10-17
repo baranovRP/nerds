@@ -93,17 +93,18 @@
     <div class="catalog">
       <article class="catalog-item">
         <div class="item-photo">
-          <figure class="product-photo">
+          <figure class="product-photo"><-- [DL] Ром, давай <figure>, заменим на ссылку, эта область будет кликабельной-->
             <img src="http://placehold.it/220x165" width="220" height="165"
                  alt="Набор для путешествий «Baxter of California»">
           </figure>
         </div>
         <div class="item-content">
-          <h4 class="product-title">
+          <h4 class="product-title"> <-- [DL] Чтобы использовать h4, нужно, чтобы у тебя на странице были h2 и h3. 
+          Я бы предложил в h2 обернуть заголовки фильтров, а в h3 обернуть название продукта. 
+          И внутрь h3 ещё положить ссылку, чтобы пользователь мог по ней, например, попасть в карточку товара -->
             Набор для путешествий<br>
             <span>«Baxter of California»</span>
-          </h4>
-
+          </h4> р
           <div class="product-price-box">
             <span class="product-price">2 900 Руб.</span>
             <button class="btn buy-product" type="submit">Купить</button>
