@@ -22,29 +22,36 @@
       </ul>
     </nav>
   </div>
-  <h1 class="main-header-title">Добро пожаловать в магазин<br>
-    готовых макетов
-  </h1> <-- [DL] h1 вынеси из контейнера и помести в отдельный блок -->
 </header>
 
-<div class="container-catalog"> <-- [DL] Зачем три обёртки? Используй две, также как и на главной странице-->
+<div class="container-page-title">
   <div class="container clearfix">
-    <div class="catalog-main">
-      <div class="catalog-filters">
-        <form action="/echo" method="get">
-          <-- [DL] Пока такой разметки фильтра достаточно, потом вернёмся к нему поподбробней-->
-          <div class="filter-price">
-            <h2 class="filter-price-title">Стоимость:</h2>
-            <img src="http://placehold.it/240x80" width="240" height="80" alt="Диапазон цены">
+    <h1 class="main-header-title container clearfix">Добро пожаловать в магазин<br>
+      готовых макетов
+    </h1>
+  </div>
+</div>
 
-            <div class="filter-price-range">
-              от <span>0</span> до <span>1500</span>
-            </div>
+<div class="container-catalog">
+  <div class="container clearfix">
+    <div class="catalog-filters">
+      <form action="/echo" method="get" id="form-filters">
+        <!--[DL] Пока такой разметки фильтра достаточно, потом вернёмся к нему поподбробней-->
+        <fieldset>
+          <div class="filter-price">
+            <fieldset>
+              <legend class="filter-price-title">Стоимость:</legend>
+              <img src="http://placehold.it/240x80" width="240" height="80" alt="Диапазон цены">
+
+              <div class="filter-price-range">
+                от <span>0</span> до <span>1500</span>
+              </div>
+            </fieldset>
           </div>
 
-          <div class="filter-grid"> <-- [DL] https://www.w3.org/wiki/HTML/Elements/fieldset. Попробуй исходя из этого поправить разметку -->
-            <h2 class="filter-grid-title">Сетка:</h2>
-            <fieldset class="filter-grid-list"> 
+          <div class="filter-grid">
+            <fieldset class="filter-grid-list">
+              <legend class="filter-grid-title">Сетка:</legend>
               <label class="control radio">
                 <input type="radio" checked name="choose-grid" value="grid-adaptive" id="radio-adaptive">Адаптивная
                 <span class="control-indicator"></span>
@@ -61,8 +68,8 @@
           </div>
 
           <div class="filter-features">
-            <h2 class="filter-features-title">Особенности:</h2>
             <fieldset class="filter-features-list">
+              <legend class="filter-features-title">Особенности:</legend>
               <label class="control checkbox">
                 <input type="checkbox" checked name="tick-slider" id="checkbox-slider">Слайдер
                 <span class="control-indicator"></span>
@@ -85,124 +92,125 @@
               </label>
             </fieldset>
           </div>
-
-          <input class="btn" type="submit" value="Показать">
-        </form>
+        </fieldset>
+        <input class="btn" type="submit" value="Показать">
+      </form>
+    </div>
+    <div class="catalog-content">
+      <div class="catalog-sort">
+        <div class="catalog-sort-title">Сортировать:</div>
+        <ul class="catalog-sort-content">
+          <li><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По функционалу</a></li>
+        </ul>
+        <div class="catalog-sort-arrows">
+          <a href="#" class="ascent"><img src="http://placehold.it/10x10" width="10" height="10"
+                                          alt="Сортировать по возрастанию"></a>
+          <a href="#" class="descent"><img src="http://placehold.it/10x10" width="10" height="10"
+                                           alt="Сортировать по убыванию"></a>
+        </div>
       </div>
-      <div class="catalog-content">
-        <div class="catalog-sort">
-          <div class="catalog-sort-title">Сортировать:</div>
-          <ul class="catalog-sort-content">
-            <li><a href="#">По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По функционалу</a></li>
-          </ul>
-          <-- [DL] А куда пропали стрелочки вверх/вниз? -->
-        </div>
-        <div class="catalog-gallery">
-          <-- [DL] https://htmlacademy.ru/courses/76 - курс, который поможет тебе разобраться с работой карточек. Хотя ты и так правильно сделал.-->
-          <article class="catalog-gallery-item">
-            <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
-            <a href="#">
-              <img src="http://placehold.it/240x240" width="240" height="240" alt="Сайт «Aviator»">
-            </a>
-            <!-- start Layout item -->
-            <!-- Normally hidden, should be visible with hoover-->
-            <div class="item-price">
-              <h4 class="item-price-title">Aviator</h4>
+      <div class="catalog-gallery">
+        <article class="catalog-gallery-item">
+          <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
+          <a href="#">
+            <img src="http://placehold.it/240x240" width="240" height="240" alt="Сайт «Aviator»">
+          </a>
+          <!-- start Layout item -->
+          <!-- Normally hidden, should be visible with hoover-->
+          <div class="item-price">
+            <h3 class="item-price-title">Aviator</h3>
 
-              <p>Одностраничный макет с авторским дизайном</p>
-              <span class="price"><a href="#" class="btn">8000 Р.</a></span>
-            </div>
-            <!-- end Layout item -->
-          </article>
-          <article class="catalog-gallery-item active">
-            <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
-            <a href="#">
-              <img src="http://placehold.it/240x240" width="240" height="240" alt="Сайт «Sunset»">
-            </a>
-            <!-- start Layout item -->
-            <!-- Normally hidden, should be visible with hoover-->
-            <div class="item-price">
-              <h4 class="item-price-title">Sunset</h4>
+            <p>Одностраничный макет с авторским дизайном</p>
+            <span class="price"><a href="#" class="btn">8000 Р.</a></span>
+          </div>
+          <!-- end Layout item -->
+        </article>
+        <article class="catalog-gallery-item active">
+          <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
+          <a href="#">
+            <img src="http://placehold.it/240x240" width="240" height="240" alt="Сайт «Sunset»">
+          </a>
+          <!-- start Layout item -->
+          <!-- Normally hidden, should be visible with hoover-->
+          <div class="item-price">
+            <h3 class="item-price-title">Sunset</h3>
 
-              <p>Интернет-магазин с личным кабинетом</p>
-              <span class="price"><a href="#" class="btn">10000 Р.</a></span>
-            </div>
-            <!-- end Layout item -->
-          </article>
-          <article class="catalog-gallery-item">
-            <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
-            <a href="#">
-              <img src="http://placehold.it/240x240" width="240" height="240" alt="Сайт «Forte»">
-            </a>
-            <!-- start Layout item -->
-            <!-- Normally hidden, should be visible with hoover-->
-            <div class="item-price">
-              <h4 class="item-price-title">Forte</h4>
+            <p>Интернет-магазин с личным кабинетом</p>
+            <span class="price"><a href="#" class="btn">10000 Р.</a></span>
+          </div>
+          <!-- end Layout item -->
+        </article>
+        <article class="catalog-gallery-item">
+          <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
+          <a href="#">
+            <img src="http://placehold.it/240x240" width="240" height="240" alt="Сайт «Forte»">
+          </a>
+          <!-- start Layout item -->
+          <!-- Normally hidden, should be visible with hoover-->
+          <div class="item-price">
+            <h3 class="item-price-title">Forte</h3>
 
-              <p>Отличный макет для личного блога</p>
-              <span class="price"><a href="#" class="btn">5000 Р.</a></span>
-            </div>
-            <!-- end Layout item -->
-          </article>
-          <article class="catalog-gallery-item">
-            <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
-            <a href="#">
-              <img src="http://placehold.it/240x240" width="240" height="240" alt="Сайт «Modern Organic Thai»">
-            </a>
-            <!-- start Layout item -->
-            <!-- Normally hidden, should be visible with hoover-->
-            <div class="item-price">
-              <h4 class="item-price-title">Modern Organic Thai</h4>
+            <p>Отличный макет для личного блога</p>
+            <span class="price"><a href="#" class="btn">5000 Р.</a></span>
+          </div>
+          <!-- end Layout item -->
+        </article>
+        <article class="catalog-gallery-item">
+          <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
+          <a href="#">
+            <img src="http://placehold.it/240x240" width="240" height="240" alt="Сайт «Modern Organic Thai»">
+          </a>
+          <!-- start Layout item -->
+          <!-- Normally hidden, should be visible with hoover-->
+          <div class="item-price">
+            <h3 class="item-price-title">Modern Organic Thai</h3>
 
-              <p>Сайт для ресторана быстрого питания</p>
-              <span class="price"><a href="#" class="btn">12000 Р.</a></span>
-            </div>
-            <!-- end Layout item -->
-          </article>
-          <article class="catalog-gallery-item">
-            <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
-            <a href="#">
-              <img src="http://placehold.it/240x240" width="240" height="240" alt="Сайт «Avenue»">
-            </a>
-            <!-- start Layout item -->
-            <!-- Normally hidden, should be visible with hoover-->
-            <div class="item-price">
-              <h4 class="item-price-title">Avenue</h4>
+            <p>Сайт для ресторана быстрого питания</p>
+            <span class="price"><a href="#" class="btn">12000 Р.</a></span>
+          </div>
+          <!-- end Layout item -->
+        </article>
+        <article class="catalog-gallery-item">
+          <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
+          <a href="#">
+            <img src="http://placehold.it/240x240" width="240" height="240" alt="Сайт «Avenue»">
+          </a>
+          <!-- start Layout item -->
+          <!-- Normally hidden, should be visible with hoover-->
+          <div class="item-price">
+            <h3 class="item-price-title">Avenue</h3>
 
-              <p>Макет для блога о путешествиях</p>
-              <span class="price"><a href="#" class="btn">8000 Р.</a></span>
-            </div>
-            <!-- end Layout item -->
-          </article>
-          <article class="catalog-gallery-item">
-            <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
-            <a href="#">
-              <img src="http://placehold.it/240x240" width="240" height="240" alt="Сайт «Dovetail»">
-            </a>
-            <!-- start Layout item -->
-            <!-- Normally hidden, should be visible with hoover-->
-            <div class="item-price">
-              <h4 class="item-price-title">Dovetail</h4>
+            <p>Макет для блога о путешествиях</p>
+            <span class="price"><a href="#" class="btn">8000 Р.</a></span>
+          </div>
+          <!-- end Layout item -->
+        </article>
+        <article class="catalog-gallery-item">
+          <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
+          <a href="#">
+            <img src="http://placehold.it/240x240" width="240" height="240" alt="Сайт «Dovetail»">
+          </a>
+          <!-- start Layout item -->
+          <!-- Normally hidden, should be visible with hoover-->
+          <div class="item-price">
+            <h3 class="item-price-title">Dovetail</h3>
 
-              <p>Интернет-магазин с галереей товаров</p>
-              <span class="price"><a href="#" class="btn">14000 Р.</a></span>
-            </div>
-            <!-- end Layout item -->
-          </article>
-        </div>
+            <p>Интернет-магазин с галереей товаров</p>
+            <span class="price"><a href="#" class="btn">14000 Р.</a></span>
+          </div>
+          <!-- end Layout item -->
+        </article>
       </div>
     </div>
-    <footer class="catalog-footer clearfix"> <-- [DL] Зачем clearfix?-->
-      <div class="pages"> <-- [DL] Повесь класс на ul и удали див-->
-        <ul>
-          <li class="active"><a href="#" class="btn page">1</a></li>
-          <li><a href="#" class="btn page">2</a></li>
-          <li><a href="#" class="btn page">3</a></li>
-          <li><a href="#" class="btn page">Следующая</a></li>
-        </ul>
-      </div>
+    <footer class="catalog-footer">
+      <ul class="pages">
+        <li class="active"><a href="#" class="btn page">1</a></li>
+        <li><a href="#" class="btn page">2</a></li>
+        <li><a href="#" class="btn page">3</a></li>
+        <li><a href="#" class="btn page">Следующая</a></li>
+      </ul>
     </footer>
   </div>
 </div>
