@@ -8,7 +8,7 @@
 <header class="main-header">
   <div class="container clearfix">
       <div class="header-logo">
-        <a href=".">
+        <a href="."> <-- [DL] Давай единообразно будем ставить везде хэштэг, вместо точки?-->
           <img src="http://placehold.it/139x56" width="139" height="56" alt="Лого дизайн-студии «Нёрдс»">
         </a>
       </div>
@@ -21,6 +21,7 @@
           <li><a href="#">Корзина</a></li>
         </ul>
       </nav>
+    <-- [DL] Попробуй написать слайдер сам на CSS, используя: http://cssslider.com/. Будут вопросы, не стесняйся пиши. -->
     <div class="header-slider">
       <ul>
         <li>
@@ -67,7 +68,7 @@
 </header>
 
 
-<div class="container-main">
+<div class="container-main"> <-- [DL] Смело используй тэг main-->
   <div class="container clearfix">
     <div class="services">
       <article class="service">
@@ -75,6 +76,7 @@
           <img src="http://placehold.it/240x124" width="240" height="124" alt="Веб-сайты">
         </figure>
         <h4 class="service-description-title">Веб-сайты</h4>
+        <-- [DL] Таже ошибка с h4-->
 
         <p class="service-description">Мир никогда не будет прежним, после того как увидит ваш сайт!</p>
         <a href="#" class="btn">Заказать</a>
@@ -100,7 +102,8 @@
     </div>
 
     <div class="about">
-      <div class="about-column-left">
+      <div class="about-column-left"> <-- [DL] Можешь, если хочешь, начать использать «хелперы» для левого и правого флоата. 
+      для класса .col-left у тебя будет задан один стиль, float:left, аналогично для правого-->
         <article>
           <h1 class="about-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
 
@@ -115,7 +118,7 @@
           </ul>
         </article>
       </div>
-      <div class="about-column-right">
+      <div class="about-column-right"> 
         <figure class="about-logo">
           <img src="http://placehold.it/187x75" width="187" height="75" alt="Лого дизайн-студии «Нёрдс»"/>
         </figure>
@@ -159,10 +162,11 @@
       <h4 class="contacts-title">NЁRDS DESIGN STUDIO</h4>
       191186, Санкт-Петербург,<br>
       ул. Б. Конюшенная, д. 19/8<br>
-      <span>тел. +7 (812) 275-75-75<br></span>
+      <span>тел. +7 (812) 275-75-75<br></span> <-- [DL] Внутрь спана положи ссылку на телефон и правильно напиши в хреф передачу номера: 
+      https://developers.google.com/web/fundamentals/native-hardware/click-to-call/. Тоже самое сделай для почты. Почту можешь придумать любую.-->
       <a href="#" class="contacts-email btn">Напишите нам</a>
     </div>
-    <div class="contacts-map-pointer">
+    <div class="contacts-map-pointer"> <-- [DL] Бабл и картинку мы нарисуем с помощью js, но чуть позже -->
       <img class="contacts-map-bubble" src="http://placehold.it/231x190" width="231" height="190" alt="">
       <img class="contacts-map-logo" src="http://placehold.it/92x37" width="92" height="37"
            alt="Лого дизайн-студии «Нёрдс»">
@@ -187,6 +191,7 @@
 <div class="feedback-form">
   <div class="container clearfix">
     <form action="/echo" method="post">
+      <-- [DL] Здесь, не приниципиально оборачивать поля ввода в лэйбл, это предпочтительно использовать только для радиокнопок и чекбоксов -->
       <label class="text control">Ваше имя:
         <input type="text" name="name" id="feedback-name" value="Представьтесь, пожалуйста">
       </label>
@@ -196,8 +201,9 @@
       <label class="textarea control">Текст письма:
         <textarea name="content" id="feedback-email-content" cols="30" rows="10">В свободной форме</textarea>
       </label>
-      <input class="btn" type="submit" value="Отправить">
+      <input class="btn" type="submit" value="Отправить"> 
       <button class="btn">Отмена</button>
+      <-- [DL] У кнопок отмена и отправить будет тип сабмит, приведи к единообразию или инпутами или баттоном -->
     </form>
   </div>
 </div>
