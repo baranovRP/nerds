@@ -37,10 +37,7 @@
     <div class="catalog-filters">
       <form action="/echo" method="get" id="form-filters">
         <!--[DL] Пока такой разметки фильтра достаточно, потом вернёмся к нему поподбробней-->
-        <fieldset> <--[DL] Ром, смотри <fieldset> нужен для группирования элементов формы. Здесь ты хочешь сгруппировать все элементы формы. 
-        А лучше группировать отдельные, например, по функциональности  -->
-          <div class="filter-price"><--[DL] Повесь этот класс на филдсет, а див можно удалить. Тоже самое ниже  -->
-            <fieldset>
+            <fieldset class="filter-price">
               <legend class="filter-price-title">Стоимость:</legend>
               <img src="http://placehold.it/240x80" width="240" height="80" alt="Диапазон цены">
 
@@ -48,10 +45,8 @@
                 от <span>0</span> до <span>1500</span>
               </div>
             </fieldset>
-          </div>
 
-          <div class="filter-grid">
-            <fieldset class="filter-grid-list">
+            <fieldset class="filter-grid">
               <legend class="filter-grid-title">Сетка:</legend>
               <label class="control radio">
                 <input type="radio" checked name="choose-grid" value="grid-adaptive" id="radio-adaptive">Адаптивная
@@ -66,10 +61,8 @@
                 <span class="control-indicator"></span>
               </label>
             </fieldset>
-          </div>
 
-          <div class="filter-features">
-            <fieldset class="filter-features-list">
+            <fieldset class="filter-features">
               <legend class="filter-features-title">Особенности:</legend>
               <label class="control checkbox">
                 <input type="checkbox" checked name="tick-slider" id="checkbox-slider">Слайдер
@@ -92,8 +85,7 @@
                 <span class="control-indicator"></span>
               </label>
             </fieldset>
-          </div>
-        </fieldset>
+
         <input class="btn" type="submit" value="Показать">
       </form>
     </div>
