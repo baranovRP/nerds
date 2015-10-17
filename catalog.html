@@ -24,14 +24,15 @@
   </div>
   <h1 class="main-header-title">Добро пожаловать в магазин<br>
     готовых макетов
-  </h1>
+  </h1> <-- [DL] h1 вынеси из контейнера и помести в отдельный блок -->
 </header>
 
-<div class="container-catalog">
+<div class="container-catalog"> <-- [DL] Зачем три обёртки? Используй две, также как и на главной странице-->
   <div class="container clearfix">
     <div class="catalog-main">
       <div class="catalog-filters">
         <form action="/echo" method="get">
+          <-- [DL] Пока такой разметки фильтра достаточно, потом вернёмся к нему поподбробней-->
           <div class="filter-price">
             <h2 class="filter-price-title">Стоимость:</h2>
             <img src="http://placehold.it/240x80" width="240" height="80" alt="Диапазон цены">
@@ -41,9 +42,9 @@
             </div>
           </div>
 
-          <div class="filter-grid">
+          <div class="filter-grid"> <-- [DL] https://www.w3.org/wiki/HTML/Elements/fieldset. Попробуй исходя из этого поправить разметку -->
             <h2 class="filter-grid-title">Сетка:</h2>
-            <fieldset class="filter-grid-list">
+            <fieldset class="filter-grid-list"> 
               <label class="control radio">
                 <input type="radio" checked name="choose-grid" value="grid-adaptive" id="radio-adaptive">Адаптивная
                 <span class="control-indicator"></span>
@@ -96,8 +97,10 @@
             <li><a href="#">По типу</a></li>
             <li><a href="#">По функционалу</a></li>
           </ul>
+          <-- [DL] А куда пропали стрелочки вверх/вниз? -->
         </div>
         <div class="catalog-gallery">
+          <-- [DL] https://htmlacademy.ru/courses/76 - курс, который поможет тебе разобраться с работой карточек. Хотя ты и так правильно сделал.-->
           <article class="catalog-gallery-item">
             <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
             <a href="#">
@@ -191,8 +194,8 @@
         </div>
       </div>
     </div>
-    <footer class="catalog-footer clearfix">
-      <div class="pages">
+    <footer class="catalog-footer clearfix"> <-- [DL] Зачем clearfix?-->
+      <div class="pages"> <-- [DL] Повесь класс на ul и удали див-->
         <ul>
           <li class="active"><a href="#" class="btn page">1</a></li>
           <li><a href="#" class="btn page">2</a></li>
