@@ -37,8 +37,9 @@
     <div class="catalog-filters">
       <form action="/echo" method="get" id="form-filters">
         <!--[DL] Пока такой разметки фильтра достаточно, потом вернёмся к нему поподбробней-->
-        <fieldset>
-          <div class="filter-price">
+        <fieldset> <--[DL] Ром, смотри <fieldset> нужен для группирования элементов формы. Здесь ты хочешь сгруппировать все элементы формы. 
+        А лучше группировать отдельные, например, по функциональности  -->
+          <div class="filter-price"><--[DL] Повесь этот класс на филдсет, а див можно удалить. Тоже самое ниже  -->
             <fieldset>
               <legend class="filter-price-title">Стоимость:</legend>
               <img src="http://placehold.it/240x80" width="240" height="80" alt="Диапазон цены">
