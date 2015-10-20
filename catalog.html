@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Дизайн-студия «Нёрдс»: Каталог</title>
+  <link href="css/catalog-style.css" rel="stylesheet">
 </head>
 <body>
 <header class="main-header">
   <div class="container clearfix">
     <div class="header-logo">
       <a href=".">
-        <img src="http://placehold.it/139x56" width="139" height="56" alt="Лого дизайн-студии «Нёрдс»">
+        <img src="img/logo.png" width="139" height="56" alt="Лого дизайн-студии «Нёрдс»">
       </a>
     </div>
     <nav class="main-navigation">
@@ -18,7 +19,7 @@
         <li><a href="#">Клиенты</a></li>
         <li><a href="#">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
-        <li><a href="#">Корзина</a></li>
+        <li><a href="#"><img src="img/icon-basket.png" width="15" height="15" alt="Корзина">Корзина</a></li>
       </ul>
     </nav>
   </div>
@@ -37,54 +38,59 @@
     <div class="catalog-filters">
       <form action="/echo" method="get" id="form-filters">
         <!--[DL] Пока такой разметки фильтра достаточно, потом вернёмся к нему поподбробней-->
-            <fieldset class="filter-price">
-              <legend class="filter-price-title">Стоимость:</legend>
-              <img src="http://placehold.it/240x80" width="240" height="80" alt="Диапазон цены">
+        <fieldset class="filter-price">
+          <legend class="filter-price-title">Стоимость:</legend>
+          <img src="img/price-slider.png" width="240" height="81" alt="Диапазон цены">
 
-              <div class="filter-price-range">
-                от <span>0</span> до <span>1500</span>
-              </div>
-            </fieldset>
+          <div class="filter-price-range">
+            от <span>0</span> до <span>1500</span>
+          </div>
+        </fieldset>
 
-            <fieldset class="filter-grid">
-              <legend class="filter-grid-title">Сетка:</legend>
-              <label class="control radio">
-                <input type="radio" checked name="choose-grid" value="grid-adaptive" id="radio-adaptive">Адаптивная
-                <span class="control-indicator"></span>
-              </label>
-              <label class="control radio">
-                <input type="radio" name="choose-grid" value="grid-fixed" id="radio-fixed">Фиксированная
-                <span class="control-indicator"></span>
-              </label>
-              <label class="control radio">
-                <input type="radio" name="choose-grid" value="grid-rubber" id="radio-rubber">Резиновая
-                <span class="control-indicator"></span>
-              </label>
-            </fieldset>
+        <fieldset class="filter-grid">
+          <legend class="filter-grid-title">Сетка:</legend>
+          <label class="control radio">
+            <input type="radio" checked name="choose-grid" value="grid-adaptive" id="radio-adaptive">Адаптивная
+            <span class="control-indicator"></span>
+          </label>
+          <label class="control radio">
+            <input type="radio" name="choose-grid" value="grid-fixed" id="radio-fixed">Фиксированная
+            <span class="control-indicator"></span>
+          </label>
+          <label class="control radio">
+            <input type="radio" name="choose-grid" value="grid-rubber" id="radio-rubber">Резиновая
+            <span class="control-indicator"></span>
+          </label>
+        </fieldset>
 
-            <fieldset class="filter-features">
-              <legend class="filter-features-title">Особенности:</legend>
-              <label class="control checkbox">
-                <input type="checkbox" checked name="tick-slider" id="checkbox-slider">Слайдер
-                <span class="control-indicator"></span>
-              </label>
-              <label class="control checkbox">
-                <input type="checkbox" name="tick-advantages" id="checkbox-advantages">Блок преимуществ
-                <span class="control-indicator"></span>
-              </label>
-              <label class="control checkbox">
-                <input type="checkbox" checked name="tick-news" id="checkbox-news">Новости
-                <span class="control-indicator"></span>
-              </label>
-              <label class="control checkbox">
-                <input type="checkbox" name="tick-gallery" id="checkbox-gallery">Галерея
-                <span class="control-indicator"></span>
-              </label>
-              <label class="control checkbox">
-                <input type="checkbox" name="tick-basket" id="checkbox-basket">Корзина
-                <span class="control-indicator"></span>
-              </label>
-            </fieldset>
+        <fieldset class="filter-features">
+          <legend class="filter-features-title">Особенности:</legend>
+          <label class="control checkbox">
+            <img src="img/icon-check-on.png" width="27" height="23" alt="">
+            <input type="checkbox" checked name="tick-slider" id="checkbox-slider">Слайдер
+            <span class="control-indicator"></span>
+          </label>
+          <label class="control checkbox">
+            <img src="img/icon-check-off.png" width="23" height="23" alt="">
+            <input type="checkbox" name="tick-advantages" id="checkbox-advantages">Блок преимуществ
+            <span class="control-indicator"></span>
+          </label>
+          <label class="control checkbox">
+            <img src="img/icon-check-on.png" width="27" height="23" alt="">
+            <input type="checkbox" checked name="tick-news" id="checkbox-news">Новости
+            <span class="control-indicator"></span>
+          </label>
+          <label class="control checkbox">
+            <img src="img/icon-check-off.png" width="23" height="23" alt="">
+            <input type="checkbox" name="tick-gallery" id="checkbox-gallery">Галерея
+            <span class="control-indicator"></span>
+          </label>
+          <label class="control checkbox">
+            <img src="img/icon-check-off.png" width="23" height="23" alt="">
+            <input type="checkbox" name="tick-basket" id="checkbox-basket">Корзина
+            <span class="control-indicator"></span>
+          </label>
+        </fieldset>
 
         <input class="btn" type="submit" value="Показать">
       </form>
@@ -98,9 +104,9 @@
           <li><a href="#">По функционалу</a></li>
         </ul>
         <div class="catalog-sort-arrows">
-          <a href="#" class="ascent"><img src="http://placehold.it/10x10" width="10" height="10"
+          <a href="#" class="ascent"><img src="img/icon-down-dir.png" width="10" height="10"
                                           alt="Сортировать по возрастанию"></a>
-          <a href="#" class="descent"><img src="http://placehold.it/10x10" width="10" height="10"
+          <a href="#" class="descent"><img src="img/icon-up-dir.png" width="10" height="10"
                                            alt="Сортировать по убыванию"></a>
         </div>
       </div>
@@ -108,7 +114,7 @@
         <article class="catalog-gallery-item">
           <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
           <a href="#">
-            <img src="http://placehold.it/240x240" width="240" height="240" alt="Сайт «Aviator»">
+            <img src="img/catalog-gallery-item-aviator.jpg" width="240" height="240" alt="Сайт «Aviator»">
           </a>
           <!-- start Layout item -->
           <!-- Normally hidden, should be visible with hoover-->
@@ -123,7 +129,7 @@
         <article class="catalog-gallery-item active">
           <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
           <a href="#">
-            <img src="http://placehold.it/240x240" width="240" height="240" alt="Сайт «Sunset»">
+            <img src="img/catalog-gallery-item-sunset.jpg" width="240" height="240" alt="Сайт «Sunset»">
           </a>
           <!-- start Layout item -->
           <!-- Normally hidden, should be visible with hoover-->
@@ -138,7 +144,7 @@
         <article class="catalog-gallery-item">
           <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
           <a href="#">
-            <img src="http://placehold.it/240x240" width="240" height="240" alt="Сайт «Forte»">
+            <img src="img/catalog-gallery-item-forte.jpg" width="240" height="240" alt="Сайт «Forte»">
           </a>
           <!-- start Layout item -->
           <!-- Normally hidden, should be visible with hoover-->
@@ -153,7 +159,7 @@
         <article class="catalog-gallery-item">
           <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
           <a href="#">
-            <img src="http://placehold.it/240x240" width="240" height="240" alt="Сайт «Modern Organic Thai»">
+            <img src="img/catalog-gallery-item-thai.jpg" width="240" height="240" alt="Сайт «Modern Organic Thai»">
           </a>
           <!-- start Layout item -->
           <!-- Normally hidden, should be visible with hoover-->
@@ -168,7 +174,7 @@
         <article class="catalog-gallery-item">
           <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
           <a href="#">
-            <img src="http://placehold.it/240x240" width="240" height="240" alt="Сайт «Avenue»">
+            <img src="img/catalog-gallery-item-avenue.jpg" width="239" height="240" alt="Сайт «Avenue»">
           </a>
           <!-- start Layout item -->
           <!-- Normally hidden, should be visible with hoover-->
@@ -183,7 +189,7 @@
         <article class="catalog-gallery-item">
           <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
           <a href="#">
-            <img src="http://placehold.it/240x240" width="240" height="240" alt="Сайт «Dovetail»">
+            <img src="img/catalog-gallery-item-dovetail.jpg" width="239" height="240" alt="Сайт «Dovetail»">
           </a>
           <!-- start Layout item -->
           <!-- Normally hidden, should be visible with hoover-->
@@ -219,7 +225,7 @@
       <a class="contacts-email btn" href="#">Напишите нам</a>
     </div>
     <div class="contacts-map-pointer">
-      <img class="contacts-map-bubble" src="http://placehold.it/231x190" width="231" height="190" alt="">
+      <img class="contacts-map-bubble" src="img/contacts-map-logo.png" width="231" height="190" alt="">
       <img class="contacts-map-logo" src="http://placehold.it/92x37" width="92" height="37"
            alt="Лого дизайн-студии «Нёрдс»">
     </div>
@@ -229,9 +235,10 @@
 <div class="main-footer">
   <div class="container clearfix">
     <div class="footer-social">
-      <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-      <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-      <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+      <a href="#" class="social-btn social-btn-vk"><img src="img/icon-vk.png" width="26" height="15" alt="Вконтакте">Вконтакте</a>
+      <a href="#" class="social-btn social-btn-fb"><img src="img/icon-fb.png" width="12" height="22" alt="Фейсбук">Фейсбук</a>
+      <a href="#" class="social-btn social-btn-inst"><img src="img/icon-instagram.png" width="21" height="21"
+                                                          alt="Инстаграм">Инстаграм</a>
 
       <div class="footer-title">Давайте дружить, это выгодно!</div>
       <p>Скидка 10% для друзей из социальных сетей.</p>
