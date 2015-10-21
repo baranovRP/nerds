@@ -69,14 +69,14 @@
 </header>
 
 
-<div class="container-main">
+<div class="main">
   <div class="container clearfix">
     <div class="services">
       <article class="service">
         <figure class="service-picture">
           <img src="img/service-pic-web.png" width="240" height="124" alt="Веб-сайты">
         </figure>
-        <h4 class="service-description-title">Веб-сайты</h4>
+        <h3 class="service-description-title">Веб-сайты</h3>
 
         <p class="service-description">Мир никогда не будет прежним, после того как увидит ваш сайт!</p>
         <a href="#" class="btn">Заказать</a>
@@ -85,7 +85,7 @@
         <figure class="service-picture">
           <img src="img/service-pic-apps.png" width="240" height="124" alt="Приложения">
         </figure>
-        <h4 class="service-description-title">Приложения</h4>
+        <h3 class="service-description-title">Приложения</h3>
 
         <p class="service-description">Покорите топ-10 приложений в AppStrore и Google Play.</p>
         <a href="#" class="btn">Заказать</a>
@@ -94,7 +94,7 @@
         <figure class="service-picture">
           <img src="img/service-pic-presentation.png" width="240" height="124" alt="Презентации">
         </figure>
-        <h4 class="service-description-title">Презентации</h4>
+        <h3 class="service-description-title">Презентации</h3>
 
         <p class="service-description">Вы даже не подозреваете, насколько вы изумительны!</p>
         <a href="#" class="btn">Заказать</a>
@@ -102,7 +102,7 @@
     </div>
 
     <div class="about">
-      <div class="about-column-left">
+      <div class="about-column-left col-left">
         <article>
           <h1 class="about-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
 
@@ -117,7 +117,7 @@
           </ul>
         </article>
       </div>
-      <div class="about-column-right">
+      <div class="about-column-right col-right">
         <figure class="about-logo">
           <img src="img/logo-about.png" width="187" height="75" alt="Лого дизайн-студии «Нёрдс»"/>
         </figure>
@@ -158,11 +158,11 @@
 <div class="container-contacts">
   <div class="container clearfix">
     <div class="contacts">
-      <h4 class="contacts-title">NЁRDS DESIGN STUDIO</h4>
+      <h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
       191186, Санкт-Петербург,<br>
       ул. Б. Конюшенная, д. 19/8<br>
-      <a href="tel:+78122757575"><span>тел. +7 (812) 275-75-75<br></span></a>
-      <a href="#" class="contacts-email btn">Напишите нам</a>
+      <span><a href="tel:+7-812-275-75-75">тел. +7 (812) 275-75-75</a><br></span>
+      <a href="mailto:someone@example.com?Subject=Hello" class="contacts-email btn">Напишите нам</a>
     </div>
     <div class="contacts-map-pointer">
       <img class="contacts-map-bubble" src="img/contacts-map-logo.png" width="231" height="190" alt="">
@@ -190,17 +190,14 @@
 <div class="feedback-form">
   <div class="container clearfix">
     <form action="/echo" method="post">
-      <label class="text control">Ваше имя:
+      Ваше имя:
         <input type="text" name="name" id="feedback-name" value="Представьтесь, пожалуйста">
-      </label>
-      <label class="text control">Ваш e-mail:
-        <input type="text" name="email" id="feedback-email" value="Для отправки ответа">
-      </label>
-      <label class="textarea control">Текст письма:
+      Ваш e-mail:
+      <input type="text" name="email" id="feedback-email" value="Для отправки ответа">
+      Текст письма:
         <textarea name="content" id="feedback-email-content" cols="30" rows="10">В свободной форме</textarea>
-      </label>
       <input class="btn" type="submit" value="Отправить">
-      <button class="btn">Отмена</button>
+      <input class="btn" type="submit" value="Отмена">
     </form>
   </div>
 </div>
