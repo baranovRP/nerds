@@ -1,6 +1,8 @@
+/* [DL] Объедени стили в один файл */
+/* [DL] По стилям всё ок. Подключи ещё шрифт, через гугл например или с помощью @font-face */
 body {
   color: #283136;
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, sans-serif; 
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
