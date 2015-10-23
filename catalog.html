@@ -9,12 +9,12 @@
 <body>
 <header class="main-header">
   <div class="container clearfix">
-    <div class="header-logo">
+    <div class="header-logo to-left">
       <a href="#">
         <img src="img/logo.png" width="139" height="56" alt="Лого дизайн-студии «Нёрдс»">
       </a>
     </div>
-    <nav class="main-navigation">
+    <nav class="main-navigation to-right">
       <ul>
         <li class="active"><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
@@ -28,7 +28,7 @@
 
 <div class="container-page-title">
   <div class="container clearfix">
-    <h1 class="main-header-title container clearfix">Добро пожаловать в магазин<br>
+    <h1 class="main-header-title container">Добро пожаловать в магазин<br>
       готовых макетов
     </h1>
   </div>
@@ -36,7 +36,7 @@
 
 <div class="container-catalog">
   <div class="container clearfix">
-    <div class="catalog-filters">
+    <div class="catalog-filters to-left">
       <form action="/echo" method="get" id="form-filters">
         <!--[DL] Пока такой разметки фильтра достаточно, потом вернёмся к нему поподбробней-->
         <fieldset class="filter-price">
@@ -96,15 +96,15 @@
         <input class="btn" type="submit" value="Показать">
       </form>
     </div>
-    <div class="catalog-content">
-      <div class="catalog-sort">
+    <div class="catalog-content to-right">
+      <div class="catalog-sort clearfix">
         <div class="catalog-sort-title">Сортировать:</div>
-        <ul class="catalog-sort-content">
+        <ul class="catalog-sort-content to-left">
           <li><a href="#">По цене</a></li>
           <li><a href="#">По типу</a></li>
           <li><a href="#">По функционалу</a></li>
         </ul>
-        <div class="catalog-sort-arrows">
+        <div class="catalog-sort-arrows to-right">
           <a href="#" class="ascent"><img src="img/icon-down-dir.png" width="11" height="10"
                                           alt="Сортировать по возрастанию"></a>
           <a href="#" class="descent"><img src="img/icon-up-dir.png" width="11" height="10"
@@ -119,7 +119,7 @@
           </a>
           <!-- start Layout item -->
           <!-- Normally hidden, should be visible with hoover-->
-          <div class="item-price">
+          <div class="item-price hidden">
             <h2 class="item-price-title">Aviator</h2>
 
             <p>Одностраничный макет с авторским дизайном</p>
@@ -134,7 +134,7 @@
           </a>
           <!-- start Layout item -->
           <!-- Normally hidden, should be visible with hoover-->
-          <div class="item-price">
+          <div class="item-price hidden">
             <h2 class="item-price-title">Sunset</h2>
 
             <p>Интернет-магазин с личным кабинетом</p>
@@ -149,7 +149,7 @@
           </a>
           <!-- start Layout item -->
           <!-- Normally hidden, should be visible with hoover-->
-          <div class="item-price">
+          <div class="item-price hidden">
             <h2 class="item-price-title">Forte</h2>
 
             <p>Отличный макет для личного блога</p>
@@ -164,7 +164,7 @@
           </a>
           <!-- start Layout item -->
           <!-- Normally hidden, should be visible with hoover-->
-          <div class="item-price">
+          <div class="item-price hidden">
             <h2 class="item-price-title">Modern Organic Thai</h2>
 
             <p>Сайт для ресторана быстрого питания</p>
@@ -179,7 +179,7 @@
           </a>
           <!-- start Layout item -->
           <!-- Normally hidden, should be visible with hoover-->
-          <div class="item-price">
+          <div class="item-price hidden">
             <h2 class="item-price-title">Avenue</h2>
 
             <p>Макет для блога о путешествиях</p>
@@ -194,7 +194,7 @@
           </a>
           <!-- start Layout item -->
           <!-- Normally hidden, should be visible with hoover-->
-          <div class="item-price">
+          <div class="item-price hidden">
             <h2 class="item-price-title">Dovetail</h2>
 
             <p>Интернет-магазин с галереей товаров</p>
@@ -235,20 +235,20 @@
 
 <div class="main-footer">
   <div class="container clearfix">
-    <div class="footer-social">
+    <div class="footer-social to-left">
       <a href="#" class="social-btn social-btn-vk"><img src="img/icon-vk.png" width="26" height="15" alt="Вконтакте">Вконтакте</a>
       <a href="#" class="social-btn social-btn-fb"><img src="img/icon-fb.png" width="12" height="22" alt="Фейсбук">Фейсбук</a>
       <a href="#" class="social-btn social-btn-inst"><img src="img/icon-instagram.png" width="21" height="21"
                                                           alt="Инстаграм">Инстаграм</a>
 
-      <div class="footer-title">Давайте дружить, это выгодно!</div>
+      <div class="footer-title to-right">Давайте дружить, это выгодно!</div>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </div>
 </div>
 
 <!-- normally hidden -->
-<div class="feedback-form">
+<div class="feedback-form hidden">
   <div class="container clearfix">
     <form action="/echo" method="post">
       <label class="text control">Ваше имя:

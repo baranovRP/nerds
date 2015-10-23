@@ -9,12 +9,12 @@
 <body>
 <header class="main-header">
   <div class="container clearfix">
-    <div class="header-logo">
-      <a href=".">
+    <div class="header-logo to-left">
+      <a href="#">
         <img src="img/logo.png" width="139" height="56" alt="Лого дизайн-студии «Нёрдс»">
       </a>
     </div>
-    <nav class="main-navigation">
+    <nav class="main-navigation to-right">
       <ul>
         <li class="active"><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
@@ -25,20 +25,20 @@
     </nav>
     <div class="header-slider">
       <ul>
-        <li>
-          <div class="header-slider-content">
+        <li class="slide">
+          <div class="header-slider-content to-left">
             <div class="header-slider-title">Долго, дорого,<br>
               скрупулезно.
             </div>
             <p>Математически выверенный дизайн для вашего сайта или мобильного</p>
             <a class="btn" href="#">Узнать больше</a>
           </div>
-          <figure class="header-slider-picture">
+          <figure class="header-slider-picture to-right">
             <img src="img/slider-header-01.png" width="338" height="231" alt="слайдер 1">
           </figure>
         </li>
-        <li>
-          <div class="header-slider-content">
+        <li class="slide hidden">
+          <div class="header-slider-content to-left">
             <div class="header-slider-title">Любите ли вы математику,<br>
               как любим ее мы?
             </div>
@@ -46,12 +46,12 @@
               за креатив, чтобы дать им возможность все просчитать</p>
             <a class="btn" href="#">Узнать больше</a>
           </div>
-          <figure class="header-slider-picture">
+          <figure class="header-slider-picture to-right">
             <img src="img/slider-header-02.png" width="230" height="249" alt="слайдер 2">
           </figure>
         </li>
-        <li>
-          <div class="header-slider-content">
+        <li class="slide hidden">
+          <div class="header-slider-content to-left">
             <div class="header-slider-title">Только наркотики,<br>
               только хардкор!
             </div>
@@ -59,7 +59,7 @@
               галлюциногенов</p>
             <a class="btn" href="#">Узнать больше</a>
           </div>
-          <figure class="header-slider-picture">
+          <figure class="header-slider-picture to-right">
             <img src="img/slider-header-03.png" width="333" height="319" alt="слайдер 3">
           </figure>
         </li>
@@ -72,7 +72,7 @@
 <div class="main">
   <div class="container clearfix">
     <div class="services">
-      <article class="service">
+      <article class="service to-left">
         <figure class="service-picture">
           <img src="img/service-pic-web.png" width="240" height="124" alt="Веб-сайты">
         </figure>
@@ -81,7 +81,7 @@
         <p class="service-description">Мир никогда не будет прежним, после того как увидит ваш сайт!</p>
         <a href="#" class="btn">Заказать</a>
       </article>
-      <article class="service">
+      <article class="service to-left">
         <figure class="service-picture">
           <img src="img/service-pic-apps.png" width="240" height="124" alt="Приложения">
         </figure>
@@ -90,7 +90,7 @@
         <p class="service-description">Покорите топ-10 приложений в AppStrore и Google Play.</p>
         <a href="#" class="btn">Заказать</a>
       </article>
-      <article class="service">
+      <article class="service to-left">
         <figure class="service-picture">
           <img src="img/service-pic-presentation.png" width="240" height="124" alt="Презентации">
         </figure>
@@ -102,7 +102,7 @@
     </div>
 
     <div class="about">
-      <div class="about-column-left col-left">
+      <div class="about-column-left col-left to-left">
         <article>
           <h1 class="about-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
 
@@ -117,7 +117,7 @@
           </ul>
         </article>
       </div>
-      <div class="about-column-right col-right">
+      <div class="about-column-right col-right to-right">
         <figure class="about-logo">
           <img src="img/logo-about.png" width="187" height="75" alt="Лого дизайн-студии «Нёрдс»"/>
         </figure>
@@ -174,20 +174,20 @@
 
 <div class="main-footer">
   <div class="container clearfix">
-    <div class="footer-social">
+    <div class="footer-social to-left">
       <a href="#" class="social-btn social-btn-vk"><img src="img/icon-vk.png" width="26" height="15" alt="Вконтакте">Вконтакте</a>
       <a href="#" class="social-btn social-btn-fb"><img src="img/icon-fb.png" width="12" height="22" alt="Фейсбук">Фейсбук</a>
       <a href="#" class="social-btn social-btn-inst"><img src="img/icon-instagram.png" width="21" height="21"
                                                           alt="Инстаграм">Инстаграм</a>
 
-      <div class="footer-title">Давайте дружить, это выгодно!</div>
+      <div class="footer-title to-right">Давайте дружить, это выгодно!</div>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </div>
 </div>
 
 <!-- normally hidden -->
-<div class="feedback-form">
+<div class="feedback-form hidden">
   <div class="container clearfix">
     <form action="/echo" method="post">
       Ваше имя:
