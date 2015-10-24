@@ -67,7 +67,9 @@ h4 {
   width: 730px;
   }
 
-.main-navigation:after {
+/*не забудь дописать стили для .main-navigation ul, .main-navigation li*/
+
+.main-navigation:after { /*[DL], если ты хочешь очистить поток, используй для этого один класс, и всё время его добавляй родителю*/
   content: '';
   display: table;
   clear: both;
@@ -120,6 +122,8 @@ h4 {
 .service:last-child {
   margin-right: 0;
   }
+
+/*[DL], у service-picture обнули margin*/
 
 .about {
   margin-bottom: 20px;
@@ -192,7 +196,7 @@ h4 {
 
 .control {
   float: left;
-  clear: both;
+  clear: both; /*А зачем clear:both?*/
   }
 
 .catalog-content {
