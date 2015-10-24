@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Дизайн-студия «Нёрдс»: Каталог</title>
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
@@ -98,7 +99,7 @@
     </div>
     <div class="catalog-content to-right">
       <div class="catalog-sort clearfix">
-        <div class="catalog-sort-title">Сортировать:</div>
+        <div class="catalog-sort-title to-left">Сортировать:</div>
         <ul class="catalog-sort-content to-left">
           <li><a href="#">По цене</a></li>
           <li><a href="#">По типу</a></li>
@@ -134,11 +135,13 @@
           </a>
           <!-- start Layout item -->
           <!-- Normally hidden, should be visible with hoover-->
-          <div class="item-price hidden">
-            <h2 class="item-price-title">Sunset</h2>
+          <div class="item-price">
+            <div class="item-price-details">
+              <h2 class="item-price-title">Sunset</h2>
 
-            <p>Интернет-магазин с личным кабинетом</p>
-            <span class="price"><a href="#" class="btn">10000 Р.</a></span>
+              <p>Интернет-магазин с личным кабинетом</p>
+              <span class="price"><a href="#" class="btn">10000 Р.</a></span>
+            </div>
           </div>
           <!-- end Layout item -->
         </article>
@@ -204,7 +207,7 @@
         </article>
       </div>
     </div>
-    <footer class="catalog-footer">
+    <footer class="catalog-footer"><!-- [BR] clearfix у родителя не помогает-->
       <ul class="pages">
         <li class="active"><a href="#" class="btn page">1</a></li>
         <li><a href="#" class="btn page">2</a></li>
@@ -240,8 +243,10 @@
       <a href="#" class="social-btn social-btn-fb"><img src="img/icon-fb.png" width="12" height="22" alt="Фейсбук">Фейсбук</a>
       <a href="#" class="social-btn social-btn-inst"><img src="img/icon-instagram.png" width="21" height="21"
                                                           alt="Инстаграм">Инстаграм</a>
+    </div>
 
-      <div class="footer-title to-right">Давайте дружить, это выгодно!</div>
+    <div class="footer-slogan to-right">
+      <div class="footer-title">Давайте дружить, это выгодно!</div>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </div>

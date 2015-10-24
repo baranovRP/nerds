@@ -53,9 +53,11 @@ h4 {
   }
 
 .container {
-  width: 900px;
+  width: 880px;
   margin: 0 auto;
   margin-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   }
 
 .header-logo {
@@ -64,15 +66,33 @@ h4 {
   }
 
 .main-navigation {
-  width: 730px;
+  width: 710px;
   }
 
-/*не забудь дописать стили для .main-navigation ul, .main-navigation li*/
+.main-navigation ul{
+  margin: 0;
+  margin-left: 150px;
+  padding: 0;
+  list-style: none;
+  }
 
-.main-navigation:after { /*[DL], если ты хочешь очистить поток, используй для этого один класс, и всё время его добавляй родителю*/
-  content: '';
-  display: table;
-  clear: both;
+.main-navigation li{
+  display: inline-block;
+  margin-right: 5px;
+  }
+
+.main-navigation a{
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 25px 15px;
+  }
+
+.main-navigation a:last-child{
+  padding-left: 15px;
   }
 
 .header-slider {
@@ -91,26 +111,16 @@ h4 {
 
 .header-slider-picture {
   width: 380px;
-  }
-
-.header-slider-picture:after {
-  content: '';
-  display: table;
-  clear: both;
+  margin: 0;
+  padding: 0;
   }
 
 .main {
-  clear: both;
+
   }
 
 .services {
   margin-bottom: 20px;
-  }
-
-.services:after {
-  content: '';
-  display: table;
-  clear: both;
   }
 
 .service {
@@ -123,16 +133,12 @@ h4 {
   margin-right: 0;
   }
 
-/*[DL], у service-picture обнули margin*/
+.service-picture{
+  margin: 0;
+  }
 
 .about {
   margin-bottom: 20px;
-  }
-
-.about:after {
-  content: '';
-  display: table;
-  clear: both;
   }
 
 .about-column-left {
@@ -150,10 +156,6 @@ h4 {
 
   }
 
-.client:first-child {
-  margin-left: 10px;
-  }
-
 .client {
   float: left;
   width: 280px;
@@ -165,8 +167,12 @@ h4 {
   margin-right: 0;
   }
 
+.client img {
+  margin: 0;
+  }
+
 .footer-social {
-  width: 900px;
+  width: 880px;
   }
 
 .hidden {
@@ -176,9 +182,6 @@ h4 {
 /* END index page*/
 
 /* START catalog page*/
-.container-page-title {
-  clear: both;
-  }
 
 .main-header-title {
   min-height: 200px;
@@ -189,23 +192,45 @@ h4 {
   }
 
 .catalog-filters {
-  width: 280px;
+  width: 270px;
   min-height: 720px;
   margin-right: 20px;
   }
 
 .control {
-  float: left;
-  clear: both; /*А зачем clear:both?*/
+  display: block;
   }
 
 .catalog-content {
-  width: 600px;
+  width: 590px;
   min-height: 320px;
   }
 
 .catalog-sort {
   min-height: 40px;
+  }
+
+.catalog-sort-content{
+  margin: 0;
+  margin-left: 30px;
+  padding: 0;
+  list-style: none;
+  }
+
+.catalog-sort-content li {
+  display: inline-block;
+  margin-right: 5px;
+  }
+
+.catalog-sort-content a{
+  opacity: 0.3;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 25px 15px;
   }
 
 .catalog-gallery {
@@ -215,22 +240,68 @@ h4 {
   float: left;
   width: 240px;
   min-height: 270px;
-  margin-right: 30px;
+  margin-right: 25px;
   margin-bottom: 60px;
-  margin-left: 30px;
+  margin-left: 25px;
   }
 
-.item-price{
+/* START item-price*/
+.item-price {
+  position: relative;
   width: 200px;
   min-height: 200px;
+  background-color: #fff;
+  overflow: hidden;
   }
 
+.item-price-details {
+
+  }
+
+.item-price-title {
+  display: block;
+  width: 70px;
+  margin: 10px auto;
+  padding-bottom: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  }
+
+.item-price-details p {
+  width: 140px;
+  margin: 30px auto;
+
+  color: #283136;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  }
+
+/* END item-price*/
+
 .catalog-footer {
-  clear: both;
+
   }
 
 .pages {
+  margin: auto;
+  margin-left: 5px;
+  padding: 0;
+  list-style: none;
+  }
+.pages li{
+  display: inline-block;
+  margin-right: 5px;
+  }
 
+.page{
+  background-color: #f1f1f1;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
   }
 
 /* END catalog page*/
