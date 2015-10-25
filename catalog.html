@@ -134,7 +134,7 @@
           </a>
           <!-- start Layout item -->
           <!-- Normally hidden, should be visible with hoover-->
-          <div class="item-price">
+          <div class="item-price hidden">
             <div class="item-price-details">
               <h2 class="item-price-title">Sunset</h2>
 
@@ -205,18 +205,16 @@
           <!-- end Layout item -->
         </article>
       </div>
+      <div class="catalog-footer">
+        <ul class="pages">
+          <li class="active"><a href="#" class="btn page">1</a></li>
+          <li><a href="#" class="btn page">2</a></li>
+          <li><a href="#" class="btn page">3</a></li>
+          <li><a href="#" class="btn page">Следующая</a></li>
+        </ul>
+      </div>
     </div>
-    <footer class="catalog-footer"><!-- [BR] clearfix у родителя не помогает-->
-    <!--[DL] 10/25
-      сatalog-footer, я бы на твоём месте разметил через див, и поместил бы в левый блок вместе с макетами
-    -->
-      <ul class="pages">
-        <li class="active"><a href="#" class="btn page">1</a></li>
-        <li><a href="#" class="btn page">2</a></li>
-        <li><a href="#" class="btn page">3</a></li>
-        <li><a href="#" class="btn page">Следующая</a></li>
-      </ul>
-    </footer>
+
   </div>
 </div>
 
@@ -238,10 +236,7 @@
   </div>
 </div>
 
-<div class="main-footer">
-    <!--[DL] 10/25
-      почему у тебя, как раз подвал размечен через div?
-    -->
+<footer class="main-footer">
   <div class="container clearfix">
     <div class="footer-social to-left">
       <a href="#" class="social-btn social-btn-vk"><img src="img/icon-vk.png" width="26" height="15" alt="Вконтакте">Вконтакте</a>
@@ -255,7 +250,7 @@
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </div>
-</div>
+</footer>
 
 <!-- normally hidden -->
 <div class="feedback-form hidden">
