@@ -1,367 +1,310 @@
-body
-{
-    font-family: Roboto, Arial, sans-serif;
+body {
+  margin: 0;
+  padding: 0;
 
-    margin: 0;
-    padding: 0;
+  color: #283136;
+  font-family: Roboto, Arial, sans-serif;
+  }
 
-    color: #283136;
-}
+h1 {
+  color: black;
+  font-size: 40px;
+  font-weight: 400;
+  }
 
-h1
-{
-    font-size: 40px;
-    font-weight: 400;
+h2 {
+  color: #283136;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  }
 
-    color: black;
-}
+h3 {
+  color: #283136;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  }
 
-h2
-{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
+h4 {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  }
 
-    color: #283136;
-}
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+  }
 
-h3
-{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
+.to-left {
+  float: left;
+  }
 
-    color: #283136;
-}
-
-h4
-{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
-
-    color: black;
-}
-
-.clearfix:after
-{
-    display: table;
-    clear: both;
-
-    content: '';
-}
-
-.to-left
-{
-    float: left;
-}
-
-.to-right
-{
-    float: right;
-}
+.to-right {
+  float: right;
+  }
 
 /* START index page*/
+.main-header {
 
+  }
 
-.container
-{
-    width: 880px;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    padding-right: 10px;
-    padding-left: 10px;
-}
+.container {
+  width: 880px;
+  margin: 0 auto;
+  margin-bottom: 20px; /*[DL] 10/25 margin-bottom лучше задавай блоку, которому необходим этот отступ.
+  Т.е я бы в твоём случае нижний отступ ставил для header, main и других.
+  Контейнер предназчен только для горизонтального центрировния элементом.*/
+  padding-left: 10px;
+  padding-right: 10px;
+  }
 
-.header-logo
-{
-    width: 150px;
-    margin-right: 20px;
-}
+.header-logo {
+  width: 150px;
+  margin-right: 20px;
+  }
 
-.main-navigation
-{
-    width: 710px;
-}
+.main-navigation {
+  width: 710px;
+  }
 
-.main-navigation ul
-{
-    margin: 0;
-    margin-left: 150px;
-    padding: 0;
+.main-navigation ul{
+  margin: 0;
+  margin-left: 150px;
+  padding: 0;
+  list-style: none;
+  }
 
-    list-style: none;
-}
+.main-navigation li{
+  display: inline-block;
+  margin-right: 5px;
+  }
 
-.main-navigation li
-{
-    display: inline-block;
+.main-navigation a{
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 25px 15px;
+  }
 
-    margin-right: 5px;
-}
+.main-navigation a:last-child{
+  padding-left: 15px;
+  }
 
-.main-navigation a
-{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 30px;
+.header-slider {
 
-    padding: 25px 15px;
+  }
 
-    text-decoration: none;
-    text-transform: uppercase;
+.slide {
+  min-height: 400px;
+  margin-bottom: 10px;
+  }
 
-    color: #000;
-}
+.header-slider-content {
+  width: 380px;
+  margin-right: 10px;
+  }
 
-.main-navigation a:last-child
-{
-    padding-left: 15px;
-}
+.header-slider-picture {
+  width: 380px;
+  margin: 0;
+  padding: 0;
+  }
 
+.main {
 
+  }
 
-.slide
-{
-    min-height: 400px;
-    margin-bottom: 10px;
-}
+.services {
+  margin-bottom: 20px;
+  }
 
-.header-slider-content
-{
-    width: 380px;
-    margin-right: 10px;
-}
+.service {
+  width: 280px;
+  margin-right: 20px;
+  min-height: 430px;
+  }
 
-.header-slider-picture
-{
-    width: 380px;
-    margin: 0;
-    padding: 0;
-}
+.service:last-child {
+  margin-right: 0;
+  }
 
+.service-picture{
+  margin: 0;
+  }
 
+.about {
+  margin-bottom: 20px;
+  }
 
-.services
-{
-    margin-bottom: 20px;
-}
+.about-column-left {
+  width: 610px;
+  margin-right: 20px;
+  min-height: 450px;
+  }
 
-.service
-{
-    width: 280px;
-    min-height: 430px;
-    margin-right: 20px;
-}
+.about-column-right {
+  width: 250px;
+  min-height: 450px;
+  }
 
-.service:last-child
-{
-    margin-right: 0;
-}
+.clients {
 
-.service-picture
-{
-    margin: 0;
-}
+  }
 
-.about
-{
-    margin-bottom: 20px;
-}
+.client {
+  float: left;
+  width: 280px;
+  margin-right: 20px;
+  min-height: 120px;
+  }
 
-.about-column-left
-{
-    width: 610px;
-    min-height: 450px;
-    margin-right: 20px;
-}
+.client:last-child {
+  margin-right: 0;
+  }
 
-.about-column-right
-{
-    width: 250px;
-    min-height: 450px;
-}
+.client img {
+  margin: 0;
+  }
 
+.footer-social {
+  width: 880px;
+  }
 
-
-.client
-{
-    float: left;
-
-    width: 280px;
-    min-height: 120px;
-    margin-right: 20px;
-}
-
-.client:last-child
-{
-    margin-right: 0;
-}
-
-.client img
-{
-    margin: 0;
-}
-
-.footer-social
-{
-    width: 880px;
-}
-
-.hidden
-{
-    display: none;
-}
+.hidden {
+  display: none;
+  }
 
 /* END index page*/
 
 /* START catalog page*/
 
-.main-header-title
-{
-    min-height: 200px;
-}
+.main-header-title {
+  min-height: 200px;
+  }
 
+.container-catalog {
 
+  }
 
-.catalog-filters
-{
-    width: 270px;
-    min-height: 720px;
-    margin-right: 20px;
-}
+.catalog-filters {
+  width: 270px;
+  min-height: 720px;
+  margin-right: 20px;
+  }
 
-.control
-{
-    display: block;
-}
+.control {
+  display: block;
+  }
 
-.catalog-content
-{
-    width: 590px;
-    min-height: 320px;
-}
+.catalog-content {
+  width: 590px;
+  min-height: 320px;
+  }
 
-.catalog-sort
-{
-    min-height: 40px;
-}
+.catalog-sort {
+  min-height: 40px;
+  }
 
-.catalog-sort-content
-{
-    margin: 0;
-    margin-left: 30px;
-    padding: 0;
+.catalog-sort-content{
+  margin: 0;
+  margin-left: 30px;
+  padding: 0;
+  list-style: none;
+  }
 
-    list-style: none;
-}
+.catalog-sort-content li {
+  display: inline-block;
+  margin-right: 5px;
+  }
 
-.catalog-sort-content li
-{
-    display: inline-block;
+.catalog-sort-content a{
+  opacity: 0.3;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 25px 15px;
+  }
 
-    margin-right: 5px;
-}
+.catalog-gallery {
+  }
 
-.catalog-sort-content a
-{
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-
-    padding: 25px 15px;
-
-    text-decoration: none;
-    text-transform: uppercase;
-
-    opacity: .3;
-    color: #000;
-}
-
-
-
-.catalog-gallery-item
-{
-    float: left;
-
-    width: 240px;
-    min-height: 270px;
-    margin-right: 25px;
-    margin-bottom: 60px;
-    margin-left: 25px;
-}
+.catalog-gallery-item {
+  float: left;
+  /*[DL] 10/25  Рекомендую использовать инлайн-блоки*/
+  width: 240px;
+  min-height: 270px;
+  margin-right: 25px;
+  margin-bottom: 60px;
+  margin-left: 25px;
+  }
 
 /* START item-price*/
-.item-price
-{
-    position: relative;
+.item-price {
+  position: relative;
+  width: 200px;
+  min-height: 200px;
+  background-color: #fff;
+  overflow: hidden;
+  }
 
-    overflow: hidden;
+.item-price-details {
 
-    width: 200px;
-    min-height: 200px;
+  }
 
-    background-color: #fff;
-}
+.item-price-title {
+  display: block;
+  width: 70px;
+  margin: 10px auto;
+  padding-bottom: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  }
 
+.item-price-details p {
+  width: 140px;
+  margin: 30px auto;
 
-
-.item-price-title
-{
-    font-size: 18px;
-
-    display: block;
-
-    width: 70px;
-    margin: 10px auto;
-    padding-bottom: 10px;
-
-    text-transform: uppercase;
-}
-
-.item-price-details p
-{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-
-    width: 140px;
-    margin: 30px auto;
-
-    color: #283136;
-}
+  color: #283136;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  }
 
 /* END item-price*/
 
+.catalog-footer {
 
+  }
 
-.pages
-{
-    margin: auto;
-    margin-left: 5px;
-    padding: 0;
+.pages {
+  margin: auto;
+  margin-left: 5px;
+  padding: 0;
+  list-style: none;
+  }
+.pages li{
+  display: inline-block;
+  margin-right: 5px;
+  }
 
-    list-style: none;
-}
-
-.pages li
-{
-    display: inline-block;
-
-    margin-right: 5px;
-}
-
-.page
-{
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-
-    text-decoration: none;
-    text-transform: uppercase;
-
-    color: #000;
-    background-color: #f1f1f1;
-}
+.page{
+  background-color: #f1f1f1;
+  color: #000000;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  }
 
 /* END catalog page*/
