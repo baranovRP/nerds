@@ -1,31 +1,7 @@
 html,
 body,
-div,
-span,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-img,
-ol,
 ul,
-li,
-fieldset,
-form,
-label,
-legend,
-article,
-figure,
-figcaption,
-footer,
-header,
-menu,
-nav,
-section {
+figure {
   margin: 0;
   padding: 0;
 }
@@ -36,6 +12,8 @@ body {
 
   font-family: Roboto, Arial, sans-serif;
   color: #283136;
+
+  background-color: #ffffff;
 }
 
 h1 {
@@ -75,6 +53,7 @@ h4 {
   text-decoration: none;
 
   background-color: #fb565a;
+  border: 0;
   border-radius: 5px;
 }
 
@@ -84,6 +63,7 @@ h4 {
 
   display: table;
 }
+
 .clearfix:after {
   clear: both;
 }
@@ -101,7 +81,6 @@ h4 {
 }
 
 /* START index page*/
-
 .main-header {
   position: relative;
 
@@ -240,7 +219,7 @@ h4 {
   background: #cccccc;
   border: 4px solid white;
   border-radius: 50%;
-  box-shadow: 0 0 2px rgba(0,0,0,0.8);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
   cursor: pointer;
 
   transition: background-color 0.2s;
@@ -259,9 +238,11 @@ h4 {
 #btn-2:checked ~ .slider-inner .slider-slides {
   transform: translate(-880px);
 }
+
 #btn-3:checked ~ .slider-inner .slider-slides {
   transform: translate(-1760px);
 }
+
 /* END slider */
 
 .services {
@@ -312,20 +293,106 @@ h4 {
   margin: 0;
 }
 
+.map-container {
+  position: relative;
+
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.contacts {
+  position: absolute;
+  top: 50%;
+  left: 160px;
+
+  width: 202px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #666666;
+
+  background-color: #ffffff;
+  transform: translateY(-50%);
+}
+
+.contacts-title {
+  margin-bottom: 25px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.contacts-phone {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.contacts-phone a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.contacts-email {
+  padding-right: 50px;
+  padding-left: 50px;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.contacts-map-bubble {
+  position: absolute;
+  top: 50%;
+  left: 830px;
+
+  transform: translateY(-50%);
+}
+
 .footer-social {
   width: 880px;
 }
 /* END index page*/
 
 /* START catalog page*/
+.container-page-title {
+  margin-bottom: 70px;
+
+  background-color: #eeeeee;
+}
+
 .main-header-title {
-  min-height: 200px;
+  padding-top: 30px;
+  padding-bottom: 100px;
+
+  font-weight: 400;
+  font-size: 40px;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+}
+
+.container-catalog {
+  margin-top: 70px;
+  margin-bottom: 80px;
 }
 
 .catalog-filters {
-  width: 270px;
+  width: 240px;
   min-height: 720px;
-  margin-right: 20px;
+  margin-right: 60px;
+  padding-right: 10px;
 }
 
 .control {
@@ -333,8 +400,9 @@ h4 {
 }
 
 .catalog-content {
-  width: 590px;
+  width: 560px;
   min-height: 320px;
+  padding-left: 10px;
 }
 
 .catalog-sort {
@@ -370,13 +438,16 @@ h4 {
 .catalog-gallery {
   font-size: 0;
 }
+
 .catalog-gallery-item {
   display: inline-block;
   width: 240px;
   min-height: 270px;
-  margin-right: 25px;
+  margin-right: 80px;
   margin-bottom: 60px;
-  margin-left: 25px;
+}
+.catalog-gallery-item:nth-child(2n) {
+  margin-right: 0;
 }
 
 /* START item-price*/
@@ -418,6 +489,7 @@ h4 {
 
   list-style: none;
 }
+
 .pages li {
   display: inline-block;
   margin-right: 5px;
