@@ -39,7 +39,6 @@
   <div class="container clearfix">
     <div class="catalog-filters to-left">
       <form action="/echo" method="get" id="form-filters">
-        <!--[DL] Пока такой разметки фильтра достаточно, потом вернёмся к нему поподбробней-->
         <fieldset class="filter-price">
           <legend class="filter-price-title">Стоимость:</legend>
           <img src="img/price-slider.png" width="240" height="81" alt="Диапазон цены">
@@ -208,6 +207,9 @@
       </div>
     </div>
     <footer class="catalog-footer"><!-- [BR] clearfix у родителя не помогает-->
+    <!--[DL] 10/25
+      сatalog-footer, я бы на твоём месте разметил через див, и поместил бы в левый блок вместе с макетами
+    -->
       <ul class="pages">
         <li class="active"><a href="#" class="btn page">1</a></li>
         <li><a href="#" class="btn page">2</a></li>
@@ -237,6 +239,9 @@
 </div>
 
 <div class="main-footer">
+    <!--[DL] 10/25
+      почему у тебя, как раз подвал размечен через div?
+    -->
   <div class="container clearfix">
     <div class="footer-social to-left">
       <a href="#" class="social-btn social-btn-vk"><img src="img/icon-vk.png" width="26" height="15" alt="Вконтакте">Вконтакте</a>

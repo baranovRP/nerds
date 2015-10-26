@@ -55,7 +55,9 @@ h4 {
 .container {
   width: 880px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 20px; /*[DL] 10/25 margin-bottom лучше задавай блоку, которому необходим этот отступ.
+  Т.е я бы в твоём случае нижний отступ ставил для header, main и других.
+  Контейнер предназчен только для горизонтального центрировния элементом.*/
   padding-left: 10px;
   padding-right: 10px;
   }
@@ -238,6 +240,7 @@ h4 {
 
 .catalog-gallery-item {
   float: left;
+  /*[DL] 10/25  Рекомендую использовать инлайн-блоки*/
   width: 240px;
   min-height: 270px;
   margin-right: 25px;
