@@ -441,7 +441,7 @@ h4 {
 }
 
 .catalog-gallery-item {
-  display: inline-block;
+  display: inline-block; /*[DL] Всем инлайн блокам задай вертикальное выравнивание*/
   width: 240px;
   min-height: 270px;
   margin-right: 80px;
