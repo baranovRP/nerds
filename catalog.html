@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Дизайн-студия «Нёрдс»: Каталог</title>
@@ -105,9 +105,9 @@
           <li><a href="#">По функционалу</a></li>
         </ul>
         <div class="catalog-sort-arrows to-right">
-          <a href="#" class="ascent"><img src="img/icon-down-dir.png" width="11" height="10"
+          <a class="ascent" href="#"><img src="img/icon-down-dir.png" width="11" height="10"
                                           alt="Сортировать по возрастанию"></a>
-          <a href="#" class="descent"><img src="img/icon-up-dir.png" width="11" height="10"
+          <a class="descent" href="#"><img src="img/icon-up-dir.png" width="11" height="10"
                                            alt="Сортировать по убыванию"></a>
         </div>
       </div>
@@ -120,10 +120,12 @@
           <!-- start Layout item -->
           <!-- Normally hidden, should be visible with hoover-->
           <div class="item-price hidden">
-            <h2 class="item-price-title">Aviator</h2>
+            <div class="item-price-details">
+              <h2 class="item-price-title">Aviator</h2>
 
-            <p>Одностраничный макет с авторским дизайном</p>
-            <span class="price"><a href="#" class="btn">8000 Р.</a></span>
+              <p>Одностраничный макет с авторским дизайном</p>
+              <span class="price"><a class="btn" href="#">8000 Р.</a></span>
+            </div>
           </div>
           <!-- end Layout item -->
         </article>
@@ -138,8 +140,8 @@
             <div class="item-price-details">
               <h2 class="item-price-title">Sunset</h2>
 
-              <p>Интернет-магазин с личным кабинетом</p>
-              <span class="price"><a href="#" class="btn">10000 Р.</a></span>
+              <p>Интернет-магазин с&nbspличным кабинетом</p>
+              <span class="price"><a class="btn" href="#">10000 Р.</a></span>
             </div>
           </div>
           <!-- end Layout item -->
@@ -152,10 +154,12 @@
           <!-- start Layout item -->
           <!-- Normally hidden, should be visible with hoover-->
           <div class="item-price hidden">
-            <h2 class="item-price-title">Forte</h2>
+            <div class="item-price-details">
+              <h2 class="item-price-title">Forte</h2>
 
-            <p>Отличный макет для личного блога</p>
-            <span class="price"><a href="#" class="btn">5000 Р.</a></span>
+              <p>Отличный макет для личного блога</p>
+              <span class="price"><a class="btn" href="#">5000 Р.</a></span>
+            </div>
           </div>
           <!-- end Layout item -->
         </article>
@@ -167,10 +171,12 @@
           <!-- start Layout item -->
           <!-- Normally hidden, should be visible with hoover-->
           <div class="item-price hidden">
-            <h2 class="item-price-title">Modern Organic Thai</h2>
+            <div class="item-price-details">
+              <h2 class="item-price-title">Modern Organic Thai</h2>
 
-            <p>Сайт для ресторана быстрого питания</p>
-            <span class="price"><a href="#" class="btn">12000 Р.</a></span>
+              <p>Сайт для ресторана быстрого питания</p>
+              <span class="price"><a class="btn" href="#">12000 Р.</a></span>
+            </div>
           </div>
           <!-- end Layout item -->
         </article>
@@ -182,10 +188,12 @@
           <!-- start Layout item -->
           <!-- Normally hidden, should be visible with hoover-->
           <div class="item-price hidden">
-            <h2 class="item-price-title">Avenue</h2>
+            <div class="item-price-details">
+              <h2 class="item-price-title">Avenue</h2>
 
-            <p>Макет для блога о путешествиях</p>
-            <span class="price"><a href="#" class="btn">8000 Р.</a></span>
+              <p>Макет для блога о путешествиях</p>
+              <span class="price"><a class="btn" href="#">8000 Р.</a></span>
+            </div>
           </div>
           <!-- end Layout item -->
         </article>
@@ -197,21 +205,23 @@
           <!-- start Layout item -->
           <!-- Normally hidden, should be visible with hoover-->
           <div class="item-price hidden">
-            <h2 class="item-price-title">Dovetail</h2>
+            <div class="item-price-details">
+              <h2 class="item-price-title">Dovetail</h2>
 
-            <p>Интернет-магазин с галереей товаров</p>
-            <span class="price"><a href="#" class="btn">14000 Р.</a></span>
+              <p>Интернет-магазин с галереей товаров</p>
+              <span class="price"><a class="btn" href="#">14000 Р.</a></span>
+            </div>
           </div>
           <!-- end Layout item -->
         </article>
       </div>
       <div class="catalog-footer">
-        <ul class="pages">
-          <li class="active"><a href="#" class="btn page">1</a></li>
-          <li><a href="#" class="btn page">2</a></li>
-          <li><a href="#" class="btn page">3</a></li>
-          <li><a href="#" class="btn page">Следующая</a></li>
-        </ul>
+        <div class="pages">
+          <a class="btn page active" href="#">1</a>
+          <a class="btn page" href="#">2</a>
+          <a class="btn page" href="#">3</a>
+          <a class="btn page next" href="#">Следующая</a>
+        </div>
       </div>
     </div>
 
@@ -230,7 +240,7 @@
       191186, Санкт-Петербург,<br>
       ул. Б. Конюшенная, д. 19/8
       <span class="contacts-phone"><a href="tel:+7-812-275-75-75">тел. +7 (812) 275-75-75</a></span>
-      <a href="mailto:someone@example.com?Subject=Hello" class="contacts-email btn">Напишите нам</a>
+      <a class="contacts-email btn" href="mailto:someone@example.com?Subject=Hello">Напишите нам</a>
     </div>
     <div class="contacts-map-pointer">
       <img class="contacts-map-bubble" src="img/contacts-map-logo.png" width="231" height="190" alt="">
@@ -241,10 +251,9 @@
 <footer class="main-footer">
   <div class="container clearfix">
     <div class="footer-social to-left">
-      <a href="#" class="social-btn social-btn-vk"><img src="img/icon-vk.png" width="26" height="15" alt="Вконтакте">Вконтакте</a>
-      <a href="#" class="social-btn social-btn-fb"><img src="img/icon-fb.png" width="12" height="22" alt="Фейсбук">Фейсбук</a>
-      <a href="#" class="social-btn social-btn-inst"><img src="img/icon-instagram.png" width="21" height="21"
-                                                          alt="Инстаграм">Инстаграм</a>
+      <a class="social-btn social-btn-vk" href="#"></a>
+      <a class="social-btn social-btn-fb" href="#"></a>
+      <a class="social-btn social-btn-inst" href="#"></a>
     </div>
 
     <div class="footer-slogan to-right">
