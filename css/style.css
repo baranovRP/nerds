@@ -111,7 +111,7 @@ h4 {
   margin-left: 320px;
 }
 
-.main-navigation ul {
+.main-navigation ul { /*[DL] Лишнее */
   margin: 0;
   padding: 0;
 
@@ -358,6 +358,7 @@ h4 {
   left: 830px;
 
   transform: translateY(-50%);
+  /* [DL] это свойство используется не всеми браузерами, используй преффиксы http://caniuse.com/#search=transform */
 }
 
 .footer-social {
@@ -374,7 +375,7 @@ h4 {
 
 .main-header-title {
   padding-top: 30px;
-  padding-bottom: 100px;
+  padding-bottom: 100px; /* [DL] Плохая практика задавать такие большие отступы заголовкам. Задай контейнеру. */
 
   font-weight: 400;
   font-size: 40px;
@@ -485,7 +486,7 @@ h4 {
 .pages {
   margin: auto;
   margin-left: 5px;
-  padding: 0;
+  padding: 0; /* [DL] это свойство лишнее. ;)*/
 
   list-style: none;
 }

@@ -11,15 +11,16 @@
 <header class="main-header">
   <div class="container clearfix">
     <div class="header-logo to-left">
-      <a href="#">
+      <a href="#"> <!--[DL] Все ссылки по логотипу ведут на главную-->
         <img src="img/logo.png" width="139" height="56" alt="Лого дизайн-студии «Нёрдс»">
       </a>
     </div>
+    <!--[DL] А теперь давай вытащим корзину из навигации. Например див с float:right, а в нём навигация и див с ссылкой -->
     <nav class="main-navigation to-right">
       <ul>
         <li class="active"><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
-        <li><a href="#">Магазин</a></li>
+        <li><a href="#">Магазин</a></li> <!--[DL] Пропиши сюда пожалуйста путь в каталог -->
         <li><a href="#">Контакты</a></li>
         <li><a href="#"><img src="img/icon-basket.png" width="15" height="15" alt="Корзина">Корзина</a></li>
       </ul>
@@ -170,12 +171,15 @@
   </div>
 </main>
 
-<!-- Map is static google api -->
+
 <div class="container-contacts">
   <div class="map-container">
     <img
       src="https://maps.googleapis.com/maps/api/staticmap?center=59.939136,30.320467&language=ru&zoom=16&scale=2&size=1119x208&key=AIzaSyAo5vouRCNe7552sixQ_m_YetSeFOzFr80"
       alt="">
+      <!-- [DL] Не-не, так карту добавлять не надо. :)
+      Вот ещё вариант как добавить google map https://support.google.com/maps/answer/3544418?hl=ru -->
+
 
     <div class="contacts">
       <h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
