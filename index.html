@@ -24,57 +24,68 @@
         <li><a href="#"><img src="img/icon-basket.png" width="15" height="15" alt="Корзина">Корзина</a></li>
       </ul>
     </nav>
-    <div class="header-slider"><!-- [BR] описание слада залазит на навигацию и лого -->
-    <!--[DL] 10/25  Всё верно, у тебя слайдер, навигация и логотип лежат в одном блоке.
-    Мы вчера с тобой видели схожий пример в каталоге, когда во втором ряду товары шли вперемешку.
-    Придерживайся правила: плавающие блоки должны лежать в одном "ряду", иначе используй дополнительный блок.
-    В твоём случае я бы вынес из шапки слайдер и положил бы его между шапкой и основной частью в container. -->
-      <ul>
-        <li class="slide">
-          <div class="header-slider-content to-left">
-            <div class="header-slider-title">Долго, дорого,<br>
-              скрупулезно.
-            </div>
-            <p>Математически выверенный дизайн для вашего сайта или мобильного</p>
-            <a class="btn" href="#">Узнать больше</a>
-          </div>
-          <figure class="header-slider-picture to-right">
-            <img src="img/slider-header-01.png" width="338" height="231" alt="слайдер 1">
-          </figure>
-        </li>
-        <li class="slide hidden">
-          <div class="header-slider-content to-left">
-            <div class="header-slider-title">Любите ли вы математику,<br>
-              как любим ее мы?
-            </div>
-            <p>Нашим дизайнерам мы удаляем нейроны, ответственные
-              за креатив, чтобы дать им возможность все просчитать</p>
-            <a class="btn" href="#">Узнать больше</a>
-          </div>
-          <figure class="header-slider-picture to-right">
-            <img src="img/slider-header-02.png" width="230" height="249" alt="слайдер 2">
-          </figure>
-        </li>
-        <li class="slide hidden">
-          <div class="header-slider-content to-left">
-            <div class="header-slider-title">Только наркотики,<br>
-              только хардкор!
-            </div>
-            <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных
-              галлюциногенов</p>
-            <a class="btn" href="#">Узнать больше</a>
-          </div>
-          <figure class="header-slider-picture to-right">
-            <img src="img/slider-header-03.png" width="333" height="319" alt="слайдер 3">
-          </figure>
-        </li>
-      </ul>
-    </div>
   </div>
 </header>
 
+<div class="slider-container">
+  <div class="container">
+    <div class="slider">
+      <input type="radio" id="btn-1" name="toggle" checked>
+      <input type="radio" id="btn-2" name="toggle">
+      <input type="radio" id="btn-3" name="toggle">
 
-<div class="main"> <!--[DL] 10/25 Почему не используешь семантический тэг main? -->
+      <div class="slider-controls">
+        <label for="btn-1"></label>
+        <label for="btn-2"></label>
+        <label for="btn-3"></label>
+      </div>
+      <div class="slider-inner">
+        <div class="slider-slides">
+          <div class="slide">
+            <div class="slider-content to-left">
+              <div class="slider-title">Долго, дорого,<br>
+                скрупулезно.
+              </div>
+              <p>Математически выверенный дизайн для вашего сайта или мобильного</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+            <figure class="slider-picture to-right">
+              <img src="img/slider-header-01.png" width="338" height="231" alt="слайдер 1">
+            </figure>
+          </div>
+          <div class="slide">
+            <div class="slider-content to-left">
+              <div class="slider-title">Любите ли вы математику,<br>
+                как любим ее мы?
+              </div>
+              <p>Нашим дизайнерам мы удаляем нейроны, ответственные
+                за креатив, чтобы дать им возможность все просчитать</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+            <figure class="slider-picture to-right">
+              <img src="img/slider-header-02.png" width="230" height="249" alt="слайдер 2">
+            </figure>
+          </div>
+          <div class="slide">
+            <div class="slider-content to-left">
+              <div class="slider-title">Только наркотики,<br>
+                только хардкор!
+              </div>
+              <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных
+                галлюциногенов</p>
+              <a class="btn" href="#">Узнать больше</a>
+            </div>
+            <figure class="slider-picture to-right">
+              <img src="img/slider-header-03.png" width="333" height="319" alt="слайдер 3">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main class="main">
   <div class="container clearfix">
     <div class="services">
       <article class="service to-left">
@@ -157,22 +168,24 @@
       </div>
     </div>
   </div>
-</div>
+</main>
 
-<!-- Map will be as background-->
+<!-- Map is static google api -->
 <div class="container-contacts">
-  <div class="container clearfix">
+  <div class="map-container">
+    <img
+      src="https://maps.googleapis.com/maps/api/staticmap?center=59.939136,30.320467&language=ru&zoom=16&scale=2&size=1119x208&key=AIzaSyAo5vouRCNe7552sixQ_m_YetSeFOzFr80"
+      alt="">
+
     <div class="contacts">
       <h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
       191186, Санкт-Петербург,<br>
-      ул. Б. Конюшенная, д. 19/8<br>
-      <span><a href="tel:+7-812-275-75-75">тел. +7 (812) 275-75-75</a><br></span>
+      ул. Б. Конюшенная, д. 19/8
+      <span class="contacts-phone"><a href="tel:+7-812-275-75-75">тел. +7 (812) 275-75-75</a></span>
       <a href="mailto:someone@example.com?Subject=Hello" class="contacts-email btn">Напишите нам</a>
     </div>
     <div class="contacts-map-pointer">
       <img class="contacts-map-bubble" src="img/contacts-map-logo.png" width="231" height="190" alt="">
-      <img class="contacts-map-logo" src="http://placehold.it/92x37" width="92" height="37"
-           alt="Лого дизайн-студии «Нёрдс»">
     </div>
   </div>
 </div>
@@ -198,11 +211,11 @@
   <div class="container clearfix">
     <form action="/echo" method="post">
       Ваше имя:
-        <input type="text" name="name" id="feedback-name" value="Представьтесь, пожалуйста">
+      <input type="text" name="name" id="feedback-name" value="Представьтесь, пожалуйста">
       Ваш e-mail:
       <input type="text" name="email" id="feedback-email" value="Для отправки ответа">
       Текст письма:
-        <textarea name="content" id="feedback-email-content" cols="30" rows="10">В свободной форме</textarea>
+      <textarea name="content" id="feedback-email-content" cols="30" rows="10">В свободной форме</textarea>
       <input class="btn" type="submit" value="Отправить">
       <input class="btn" type="submit" value="Отмена">
     </form>
