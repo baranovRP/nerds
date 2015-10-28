@@ -5,25 +5,27 @@
   <title>Дизайн-студия «Нёрдс»: Каталог</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300&subset=latin,cyrillic' rel='stylesheet'>
 </head>
 <body>
 <header class="main-header">
   <div class="container clearfix">
     <div class="header-logo to-left">
-      <a href="#">
+      <a href=".">
         <img src="img/logo.png" width="139" height="56" alt="Лого дизайн-студии «Нёрдс»">
       </a>
     </div>
-    <nav class="main-navigation to-right">
+    <nav class="main-navigation to-left col">
       <ul>
-        <li class="active"><a href="#">Студия</a></li> <!--[DL] Пропиши сюда пожалуйста путь на главную -->
+        <li class="active"><a href=".">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
-        <li><a href="#">Магазин</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
-        <li><a href="#"><img src="img/icon-basket.png" width="15" height="15" alt="Корзина">Корзина</a></li>
       </ul>
     </nav>
+    <div class="shop-basket-navigation to-right col">
+        <a class="basket-icon" href="#">Корзина</a>
+    </div>
   </div>
 </header>
 
@@ -113,7 +115,9 @@
       </div>
       <div class="catalog-gallery">
         <article class="catalog-gallery-item">
-          <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt=""> <!-- [DL] Ром, там будет простой серый фон. :) -->
+          <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
+          <!-- [DL] Ром, там будет простой серый фон. :) -->
+          <!-- [RB] Я предполагал он как то будет делаться псевдоэлемнтом -->
           <a href="#">
             <img src="img/catalog-gallery-item-aviator.jpg" width="240" height="240" alt="Сайт «Aviator»">
           </a>
@@ -228,23 +232,30 @@
   </div>
 </div>
 
-<!-- Map is static google api -->
 <div class="container-contacts">
-  <div class="map-container">
-    <img
-      src="https://maps.googleapis.com/maps/api/staticmap?center=59.939136,30.320467&language=ru&zoom=16&scale=2&size=1119x208&key=AIzaSyAo5vouRCNe7552sixQ_m_YetSeFOzFr80"
-      alt="">
 
-    <div class="contacts">
-      <h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
-      191186, Санкт-Петербург,<br>
-      ул. Б. Конюшенная, д. 19/8
-      <span class="contacts-phone"><a href="tel:+7-812-275-75-75">тел. +7 (812) 275-75-75</a></span>
-      <a class="contacts-email btn" href="mailto:someone@example.com?Subject=Hello">Напишите нам</a>
-    </div>
-    <div class="contacts-map-pointer">
-      <img class="contacts-map-bubble" src="img/contacts-map-logo.png" width="231" height="190" alt="">
-    </div>
+  <div class="map-container">
+    <iframe class="map-layer"
+      width="100%"
+      height="416"
+      frameborder="0" style="border:0"
+      src="https://www.google.com/maps/embed/v1/view?&key=AIzaSyAo5vouRCNe7552sixQ_m_YetSeFOzFr80&center=59.939141,30.319587&maptype=roadmap&zoom=17&language=ru"
+      allowfullscreen>
+    </iframe>
+
+<div class="container">
+  <div class="contacts">
+    <h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
+    191186, Санкт-Петербург,<br>
+    ул. Б. Конюшенная, д. 19/8
+    <span class="contacts-phone"><a href="tel:+7-812-275-75-75">тел. +7 (812) 275-75-75</a></span>
+    <a class="contacts-email btn" href="mailto:someone@example.com?Subject=Hello">Напишите нам</a>
+  </div>
+  <div class="contacts-map-pointer">
+    <img class="contacts-map-bubble" src="img/contacts-map-logo.png" width="231" height="190" alt="">
+  </div>
+</div>
+
   </div>
 </div>
 
