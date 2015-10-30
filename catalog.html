@@ -39,7 +39,7 @@
 
 <div class="container-catalog">
   <div class="container clearfix">
-    <div class="catalog-filters to-left">
+    <div class="catalog-filters catalog-col to-left">
       <form action="/echo" method="get" id="form-filters">
         <fieldset class="filter-price">
           <legend class="filter-price-title">Стоимость:</legend>
@@ -98,27 +98,22 @@
         <input class="btn" type="submit" value="Показать">
       </form>
     </div>
-    <div class="catalog-content to-right">
+    <div class="catalog-content catalog-col to-right">
       <div class="catalog-sort clearfix">
         <div class="catalog-sort-title to-left">Сортировать:</div>
-        <ul class="catalog-sort-content to-left">
-          <li><a href="#">По цене</a></li>
-          <li><a href="#">По типу</a></li>
-          <li><a href="#">По функционалу</a></li>
-        </ul>
+        <div class="catalog-sort-content to-left">
+          <a href="#">По цене</a>
+          <a href="#">По типу</a>
+          <a href="#">По функционалу</a>
+        </div>
         <div class="catalog-sort-arrows to-right">
-          <a class="ascent" href="#"><img src="img/icon-down-dir.png" width="11" height="10"
-                                          alt="Сортировать по возрастанию"></a>
-          <a class="descent" href="#"><img src="img/icon-up-dir.png" width="11" height="10"
-                                           alt="Сортировать по убыванию"></a>
+          <a class="descent" href="#"></a>
+          <a class="ascent" href="#"></a>
         </div>
       </div>
       <div class="catalog-gallery">
-        <article class="catalog-gallery-item">
-          <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
-          <!-- [DL] Ром, там будет простой серый фон. :) -->
-          <!-- [RB] Я предполагал он как то будет делаться псевдоэлемнтом -->
-          <a href="#">
+        <article class="catalog-gallery-item">-->
+          <a class="miniature" href="#">
             <img src="img/catalog-gallery-item-aviator.jpg" width="240" height="240" alt="Сайт «Aviator»">
           </a>
           <!-- start Layout item -->
@@ -134,8 +129,7 @@
           <!-- end Layout item -->
         </article>
         <article class="catalog-gallery-item active">
-          <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
-          <a href="#">
+          <a class="miniature" href="#">
             <img src="img/catalog-gallery-item-sunset.jpg" width="240" height="240" alt="Сайт «Sunset»">
           </a>
           <!-- start Layout item -->
@@ -151,8 +145,7 @@
           <!-- end Layout item -->
         </article>
         <article class="catalog-gallery-item">
-          <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
-          <a href="#">
+          <a class="miniature" href="#">
             <img src="img/catalog-gallery-item-forte.jpg" width="240" height="240" alt="Сайт «Forte»">
           </a>
           <!-- start Layout item -->
@@ -168,8 +161,7 @@
           <!-- end Layout item -->
         </article>
         <article class="catalog-gallery-item">
-          <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
-          <a href="#">
+          <a class="miniature" href="#">
             <img src="img/catalog-gallery-item-thai.jpg" width="240" height="240" alt="Сайт «Modern Organic Thai»">
           </a>
           <!-- start Layout item -->
@@ -185,8 +177,7 @@
           <!-- end Layout item -->
         </article>
         <article class="catalog-gallery-item">
-          <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
-          <a href="#">
+          <a class="miniature" href="#">
             <img src="img/catalog-gallery-item-avenue.jpg" width="239" height="240" alt="Сайт «Avenue»">
           </a>
           <!-- start Layout item -->
@@ -202,8 +193,7 @@
           <!-- end Layout item -->
         </article>
         <article class="catalog-gallery-item">
-          <img class="item-vertical-strip" src="http://placehold.it/240x30" width="240" height="30" alt="">
-          <a href="#">
+          <a class="miniature" href="#">
             <img src="img/catalog-gallery-item-dovetail.jpg" width="239" height="240" alt="Сайт «Dovetail»">
           </a>
           <!-- start Layout item -->
