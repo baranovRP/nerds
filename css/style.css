@@ -480,13 +480,13 @@ h4 {
   top: 359px;
   left: 0;
 
-  width: 880px;
+  width: 100%;
   height: 2px;
 
   background-color: #eeeeee;
 }
 
-.about-column-left {
+.about-orders {
   width: 610px;
   min-height: 450px;
   margin: 0;
@@ -499,7 +499,7 @@ h4 {
   color: #283136;
 }
 
-.about-column-right {
+.about-work {
   width: 250px;
   min-height: 450px;
   margin: 0;
