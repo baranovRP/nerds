@@ -400,6 +400,8 @@ h4 {
   position: relative;
 
   width: 100%;
+
+  pointer-events: none;
 }
 
 .map-layer {
@@ -416,14 +418,14 @@ h4 {
 .contacts {
   position: absolute;
   top: 50%;
-  left: 160px;
+  left: 10px;
 
-  width: 202px;
+  width: 206px;
   margin: 0 auto;
-  padding-top: 30px;
+  /*padding-top: 30px;*/
   padding-right: 20px;
   padding-bottom: 25px;
-  padding-left: 20px;
+  padding-left: 22px;
 
   font-weight: 400;
   font-size: 16px;
@@ -460,8 +462,8 @@ h4 {
 }
 
 .contacts-email {
-  padding-right: 50px;
-  padding-left: 50px;
+  padding-right: 53px;
+  padding-left: 53px;
 
   font-weight: 700;
   font-size: 12px;
@@ -486,7 +488,7 @@ h4 {
   width: 270px;
   margin: 0 auto;
   padding-top: 79px;
-  padding-right: 36px;
+  padding-right: 25px;
 }
 
 .social-btn {
@@ -515,6 +517,25 @@ h4 {
   background-position: 18px -126px;
 }
 
+.footer-slogan {
+  margin-top: 73px;
+  padding-right: 21px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #283136;
+}
+
+.footer-title {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: black;
+}
 /* END index page*/
 
 /* START catalog page*/
@@ -548,11 +569,289 @@ h4 {
   width: 240px;
   min-height: 720px;
   margin-right: 60px;
+  padding-top: 4px;
   padding-right: 10px;
 }
 
+.filter {
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+}
+
+.filter-price-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+/* START Filter price */
+.range-filter {
+  width: 240px;
+  margin: auto;
+  margin-bottom: 10px;
+  padding-top: 14px;
+}
+
+.range-controls {
+  position: relative;
+
+  height: 80px;
+  margin-bottom: 15px;
+  padding: 0 30px;
+  overflow: hidden;
+
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.scale {
+  width: 187px;
+  height: 2px;
+  margin-top: 39px;
+
+  background-color: #d7dcde;
+}
+
+.bar {
+  width: 139px;
+  height: 2px;
+  margin-left: 0;
+
+  background-color: #00ca74;
+}
+
+.toggle {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+
+  width: 4px;
+  height: 4px;
+
+  background-color: #ababab;
+  border: 8px solid white;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 1px 0 #d2d2d2;
+     -moz-box-shadow: 0 1px 0 #d2d2d2;
+          box-shadow: 0 1px 0 #d2d2d2;
+  cursor: pointer;
+}
+.min-toggle {
+  left: 19px;
+}
+.max-toggle {
+  left: 159px;
+}
+
+.price-controls {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #283136;
+  text-transform: uppercase;
+}
+
+.min-price,
+.max-price {
+  width: 55px;
+  margin-left: 7px;
+  padding: 8px 11px;
+
+  text-align: center;
+
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 5px;
+}
+.min-price {
+  margin-right: 14px;
+}
+/* END Filter price */
+
+
+/* START Filter grid */
+
+.filter-grid {
+  margin-top: 34px;
+}
+
+.filter-grid-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.radio {
+  position: relative;
+
+  display: inline-block;
+  padding-top: 16px;
+  padding-bottom: 5px;
+  padding-left: 35px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
+  color: #283136;
+
+  cursor: pointer;
+}
+
+.radio input {
+  position: absolute;
+  z-index: -1;
+
+  opacity: 0;
+}
+
+.radio::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 0;
+
+  display: block;
+  width: 17px;
+  height: 17px;
+
+  border: 3px solid #c1c1c1;
+  border-radius: 50%;
+}
+
+.radio input:checked ~ .control-indicator::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: 8px;
+
+  display: block;
+  width: 8px;
+  height: 8px;
+
+  background-color: #c1c1c1;
+  border-radius: 50%;
+}
+/* END Filter grid */
+
+/* START Filter features */
+.filter-features-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.filter-features {
+  margin-top: 38px;
+}
+
+.filter-features-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.checkbox {
+  position: relative;
+
+  display: inline-block;
+  padding-top: 16px;
+  padding-bottom: 5px;
+  padding-left: 35px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  vertical-align: top;
+  color: #283136;
+
+  cursor: pointer;
+}
+
+.checkbox input {
+  position: absolute;
+  z-index: -1;
+
+  opacity: 0;
+}
+
+.checkbox::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 0;
+
+  display: block;
+  width: 17px;
+  height: 17px;
+
+  border: 2px solid #c1c1c1;
+  border-radius: 5px;
+}
+
+.checkbox input:checked ~ .control-indicator::before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 7px;
+  z-index: 50;
+
+  display: block;
+  width: 4px;
+  height: 11px;
+
+  background-color: #c1c1c1;
+  -webkit-transform: rotate(-45deg);
+     -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.checkbox input:checked ~ .control-indicator::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 42;
+
+  display: block;
+  width: 4px;
+  height: 17px;
+
+  background-color: #c1c1c1;
+  outline: 2px solid #ffffff;
+  -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+/* END Filter features */
+
 .control {
   display: block;
+}
+
+.catalog-filters .btn {
+  margin-top: 45px;
+
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+
+  background-color: #f1f1f1;
 }
 
 .catalog-content {
@@ -716,7 +1015,6 @@ h4 {
   overflow: hidden;
 
   background-color: #ffffff;
-  outline: red dotted;
 }
 
 .item-price:hover {
@@ -806,6 +1104,14 @@ h4 {
 
 .page.next {
   padding: 10px 30px;
+}
+
+.page.active {
+  padding: 8px 13px;
+
+  background-color: #ffffff;
+  border: 2px solid #f1f1f1;
+  opacity: 0.9;
 }
 
 /* END catalog page*/

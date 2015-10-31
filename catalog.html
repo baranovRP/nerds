@@ -24,7 +24,7 @@
       </ul>
     </nav>
     <div class="shop-basket-navigation to-right col">
-        <a class="basket-icon" href="#">Корзина</a>
+      <a class="basket-icon" href="#">Корзина</a>
     </div>
   </div>
 </header>
@@ -41,16 +41,24 @@
   <div class="container clearfix">
     <div class="catalog-filters catalog-col to-left">
       <form action="/echo" method="get" id="form-filters">
-        <fieldset class="filter-price">
+        <fieldset class="filter-price filter">
           <legend class="filter-price-title">Стоимость:</legend>
-          <img src="img/price-slider.png" width="240" height="81" alt="Диапазон цены">
-
-          <div class="filter-price-range">
-            от <span>0</span> до <span>1500</span>
+          <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle min-toggle"></div>
+              <div class="toggle max-toggle"></div>
+            </div>
+            <div class="price-controls">
+              от <input class="min-price" type="text" value="0">
+              до <input class="max-price" type="text" value="15000">
+            </div>
           </div>
         </fieldset>
 
-        <fieldset class="filter-grid">
+        <fieldset class="filter-grid filter">
           <legend class="filter-grid-title">Сетка:</legend>
           <label class="control radio">
             <input type="radio" checked name="choose-grid" value="grid-adaptive" id="radio-adaptive">Адаптивная
@@ -66,30 +74,25 @@
           </label>
         </fieldset>
 
-        <fieldset class="filter-features">
+        <fieldset class="filter-features filter">
           <legend class="filter-features-title">Особенности:</legend>
           <label class="control checkbox">
-            <img src="img/icon-check-on.png" width="27" height="23" alt="">
             <input type="checkbox" checked name="tick-slider" id="checkbox-slider">Слайдер
             <span class="control-indicator"></span>
           </label>
           <label class="control checkbox">
-            <img src="img/icon-check-off.png" width="23" height="23" alt="">
             <input type="checkbox" name="tick-advantages" id="checkbox-advantages">Блок преимуществ
             <span class="control-indicator"></span>
           </label>
           <label class="control checkbox">
-            <img src="img/icon-check-on.png" width="27" height="23" alt="">
             <input type="checkbox" checked name="tick-news" id="checkbox-news">Новости
             <span class="control-indicator"></span>
           </label>
           <label class="control checkbox">
-            <img src="img/icon-check-off.png" width="23" height="23" alt="">
             <input type="checkbox" name="tick-gallery" id="checkbox-gallery">Галерея
             <span class="control-indicator"></span>
           </label>
           <label class="control checkbox">
-            <img src="img/icon-check-off.png" width="23" height="23" alt="">
             <input type="checkbox" name="tick-basket" id="checkbox-basket">Корзина
             <span class="control-indicator"></span>
           </label>
@@ -226,25 +229,25 @@
 
   <div class="map-container">
     <iframe class="map-layer"
-      width="100%"
-      height="416"
-      frameborder="0" style="border:0"
-      src="https://www.google.com/maps/embed/v1/view?&key=AIzaSyAo5vouRCNe7552sixQ_m_YetSeFOzFr80&center=59.939141,30.319587&maptype=roadmap&zoom=17&language=ru"
-      allowfullscreen>
+            width="100%"
+            height="416"
+            frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed/v1/view?&key=AIzaSyAo5vouRCNe7552sixQ_m_YetSeFOzFr80&center=59.939141,30.319587&maptype=roadmap&zoom=17&language=ru"
+            allowfullscreen>
     </iframe>
 
-<div class="container">
-  <div class="contacts">
-    <h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
-    191186, Санкт-Петербург,<br>
-    ул. Б. Конюшенная, д. 19/8
-    <span class="contacts-phone"><a href="tel:+7-812-275-75-75">тел. +7 (812) 275-75-75</a></span>
-    <a class="contacts-email btn" href="mailto:someone@example.com?Subject=Hello">Напишите нам</a>
-  </div>
-  <div class="contacts-map-pointer">
-    <img class="contacts-map-bubble" src="img/contacts-map-logo.png" width="231" height="190" alt="">
-  </div>
-</div>
+    <div class="container">
+      <div class="contacts">
+        <h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
+        191186, Санкт-Петербург,<br>
+        ул. Б. Конюшенная, д. 19/8
+        <span class="contacts-phone"><a href="tel:+7-812-275-75-75">тел. +7 (812) 275-75-75</a></span>
+        <a class="contacts-email btn" href="mailto:someone@example.com?Subject=Hello">Напишите нам</a>
+      </div>
+      <div class="contacts-map-pointer">
+        <img class="contacts-map-bubble" src="img/contacts-map-logo.png" width="231" height="190" alt="">
+      </div>
+    </div>
 
   </div>
 </div>
