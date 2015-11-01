@@ -75,8 +75,7 @@ h4 {
 }
 
 .hidden {
-  /*visibility: hidden;*/
-  opacity: 0;
+  display: none;
 }
 
 /* START index page*/
@@ -329,7 +328,6 @@ h4 {
   margin: 0;
   padding: 0;
 }
-
 
 .slider-controls {
   position: absolute;
@@ -683,7 +681,6 @@ h4 {
 
   background-color: #fb565a;
 }
-
 
 .client {
   float: left;
@@ -1268,7 +1265,7 @@ h4 {
 
   border-width: 10px 5.5px 0 5.5px;
   border-style: solid;
-  border-color: #00ca72 transparent transparent transparent;
+  border-color: #b5b5b5 transparent transparent transparent;
 }
 
 .ascent {
@@ -1281,7 +1278,28 @@ h4 {
 
   border-width: 0 5.5px 10px 5.5px;
   border-style: solid;
+  border-color: transparent transparent #b5b5b5 transparent;
+}
+
+.descent:active{
+  border-color: #000000 transparent transparent transparent;
+}
+
+.ascent:active{
   border-color: transparent transparent #000000 transparent;
+}
+
+.descent.active{
+  border-color: #00ca72 transparent transparent transparent;
+}
+
+.ascent.active{
+  border-color: transparent transparent #00ca72 transparent
+}
+
+.ascent.active,
+.descent.active{
+  pointer-events: none;
 }
 
 .catalog-gallery-item {
@@ -1300,8 +1318,6 @@ h4 {
   margin-right: 0;
 }
 
-
-
 .miniature::before {
   content: "";
 
@@ -1313,7 +1329,7 @@ h4 {
   opacity: 0.1;
 }
 
-.miniature:hover::before {
+.catalog-gallery-item:hover .miniature::before{
   opacity: 0.5;
 }
 
@@ -1331,12 +1347,6 @@ h4 {
   background-color: #ffffff;
 }
 
-.item-price:hover {
-  z-index: 1;
-
-  visibility: visible;
-  opacity: 1;
-}
 .item-price-details {
   position: relative;
 
@@ -1389,6 +1399,18 @@ h4 {
   padding: 14px 33px;
 }
 
+.price .btn:hover {
+  background-color: #d6494d;
+}
+
+.price .btn:active {
+  background-color: #b63538;
+  box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.15);
+}
+
+.catalog-gallery-item:hover .item-price{
+  display: block;
+}
 /* END item-price*/
 
 .pages {
