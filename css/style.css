@@ -1426,23 +1426,23 @@ h4 {
 
 .item-price-title {
   display: block;
-  width: 70px;
+  width: 160px;
   margin: 0 auto;
-  padding-top: 35px;
-  padding-bottom: 10px;
+  padding-top: 31px;
+  padding-bottom: 0;
 
   font-weight: 400;
   font-size: 18px;
-  line-height: 9px;
+  line-height: 24px;
   color: #000000;
   text-transform: uppercase;
 }
 
 .item-price-details p {
-  width: 140px;
+  width: 160px;
   margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 35px;
+  padding-top: 12px;
+  padding-bottom: 29px;
 
   font-weight: 400;
   font-size: 14px;
@@ -1453,7 +1453,7 @@ h4 {
 
 .price {
   display: inline-block;
-  width: 140px;
+  width: 160px;
   padding-bottom: 18px;
 
   font-weight: 400;
@@ -1481,6 +1481,18 @@ h4 {
   display: block;
 }
 /* END item-price*/
+
+.catalog-gallery-item:nth-child(1) .btn,
+.catalog-gallery-item:nth-child(3) .btn,
+.catalog-gallery-item:nth-child(5) .btn {
+  padding-right: 38px;
+  padding-left: 38px;
+}
+
+.catalog-gallery-item:nth-child(4) p {
+  padding-top: 4px;
+  padding-bottom: 13px;
+}
 
 .pages {
   margin: auto;
