@@ -303,7 +303,7 @@ h4 {
   font-size: 36px;
   line-height: 36px;
   font-family: "Roboto Medium", Arial, sans-serif;
-  color: black;
+  color: #000000;
 }
 
 .slider-content p {
@@ -325,7 +325,7 @@ h4 {
   font-size: 12px;
   line-height: 18px;
   font-family: "Roboto Medium", Arial, sans-serif;
-  color: white;
+  color: #ffffff;
 
   background-color: #fb565a;
 }
@@ -353,8 +353,8 @@ h4 {
 
   vertical-align: top;
 
-  background: #cccccc;
-  border: 3px solid white;
+  background: #ffffff;
+  border: 3px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
 
@@ -567,7 +567,7 @@ h4 {
   font-size: 36px;
   line-height: 36px;
   font-family: "Roboto Medium", Arial, sans-serif;
-  color: black;
+  color: #000000;
 }
 
 .about-title > p {
@@ -640,10 +640,10 @@ h4 {
   font-size: 16px;
   line-height: 9px;
   font-family: "Roboto Medium", Arial, sans-serif;
-  color: black;
+  color: #000000;
   text-transform: uppercase;
 
-  background: white;
+  background: #ffffff;
 }
 
 .founded:after {
@@ -825,7 +825,7 @@ h4 {
   font-size: 16px;
   line-height: 30px;
   font-family: "Roboto Medium", Arial, sans-serif;
-  color: black;
+  color: #000000;
   text-transform: uppercase;
 }
 
@@ -934,7 +934,7 @@ h4 {
   font-size: 36px;
   line-height: 36px;
   font-family: "Roboto Medium", Arial, sans-serif;
-  color: black;
+  color: #000000;
 }
 /* END index page*/
 
@@ -954,7 +954,7 @@ h4 {
   font-size: 40px;
   font-family: "Roboto Medium", Arial, sans-serif;
   text-align: center;
-  color: black;
+  color: #000000;
   text-transform: uppercase;
 }
 
@@ -1035,7 +1035,7 @@ h4 {
   height: 4px;
 
   background-color: #ababab;
-  border: 8px solid white;
+  border: 8px solid #ffffff;
   border-radius: 50%;
   -webkit-box-shadow: 0 1px 0 #d2d2d2;
      -moz-box-shadow: 0 1px 0 #d2d2d2;
