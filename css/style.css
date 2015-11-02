@@ -13,6 +13,13 @@ body {
   background-color: #ffffff;
 }
 
+.container {
+  width: 880px;
+  margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
 h1 {
   font-weight: 400;
   font-size: 40px;
@@ -89,12 +96,7 @@ h4 {
   background-color: #eeeeee;
 }
 
-.container {
-  width: 880px;
-  margin: 0 auto;
-  padding-right: 10px;
-  padding-left: 10px;
-}
+
 
 .header-logo {
   width: 140px;
@@ -763,7 +765,7 @@ h4 {
 
   width: 100%;
 
-  /*pointer-events: none;*/
+  pointer-events: none;
 }
 
 .map-layer {
@@ -779,8 +781,8 @@ h4 {
 
 .contacts {
   position: absolute;
-  top: 90%;
-  left: 27%;
+  top: 0;
+  left: 7px;
 
   width: 206px;
   margin: 0 auto;
@@ -794,11 +796,11 @@ h4 {
   color: #666666;
 
   background-color: #ffffff;
-  -webkit-transform: translateY(-120%);
-     -moz-transform: translateY(-120%);
-      -ms-transform: translateY(-120%);
-       -o-transform: translateY(-120%);
-          transform: translateY(-120%);
+  -webkit-transform: translateY(-138%);
+     -moz-transform: translateY(-138%);
+      -ms-transform: translateY(-138%);
+       -o-transform: translateY(-138%);
+          transform: translateY(-138%);
 }
 
 .contacts-title {
@@ -830,6 +832,8 @@ h4 {
   font-size: 12px;
   line-height: 18px;
   color: #ffffff;
+
+  pointer-events: auto;
 }
 
 .contacts-email:hover {
@@ -843,14 +847,14 @@ h4 {
 
 .contacts-map-bubble {
   position: absolute;
-  top: 95%;
-  left: 63%;
+  top: 0;
+  left: 689px;
 
-  -webkit-transform: translateY(-150%);
-     -moz-transform: translateY(-150%);
-      -ms-transform: translateY(-150%);
-       -o-transform: translateY(-150%);
-          transform: translateY(-150%);
+  -webkit-transform: translateY(-164%);
+     -moz-transform: translateY(-164%);
+      -ms-transform: translateY(-164%);
+       -o-transform: translateY(-164%);
+          transform: translateY(-164%);
 }
 
 .footer-social {
