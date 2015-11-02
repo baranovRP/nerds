@@ -1460,6 +1460,31 @@ h4 {
   margin-right: 0;
 }
 
+.decorate-dots {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 100;
+
+  width: 100%;
+}
+
+.decorate-dots label {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin: 0 3px;
+
+  vertical-align: top;
+
+  background: #ffffff;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+
+  transition: background-color 0.2s;
+}
+
 .miniature::before {
   content: "";
 
