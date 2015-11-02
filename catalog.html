@@ -267,22 +267,21 @@
 </footer>
 
 <!-- normally hidden -->
-<div class="feedback-form hidden">
-  <div class="container clearfix">
-    <form action="/echo" method="post">
-      <label class="text control">Ваше имя:
-        <input type="text" name="name" id="feedback-name" value="Представьтесь, пожалуйста">
-      </label>
-      <label class="text control">Ваш e-mail:
-        <input type="text" name="email" id="feedback-email" value="Для отправки ответа">
-      </label>
-      <label class="textarea control">Текст письма:
-        <textarea name="content" id="feedback-email-content" cols="30" rows="10">В свободной форме</textarea>
-      </label>
-      <input class="btn" type="submit" value="Отправить">
-      <button class="btn">Отмена</button>
-    </form>
-  </div>
+<div class="model-content hidden">
+  <div class="model-content-close">Закрыть</div>
+  <form class="feedback-form" action="/echo" method="post">
+    <label class="text control to-left">Ваше имя:
+      <input type="text" name="name" id="feedback-name" value="Представьтесь, пожалуйста">
+    </label>
+    <label class="text control to-right">Ваш e-mail:
+      <input type="text" name="email" id="feedback-email" value="Для отправки ответа">
+    </label>
+    <label class="textarea control to-left">Текст письма:
+      <textarea name="content" id="feedback-email-content">В свободной форме</textarea>
+    </label>
+    <input class="send btn to-left active" type="submit" value="Отправить">
+    <input class="cancel btn to-right" type="submit" value="Отмена">
+  </form>
 </div>
 </body>
 </html>
