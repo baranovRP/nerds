@@ -794,19 +794,17 @@ h4 {
 
 .container-contacts .container {
   position: relative;
-  z-index: 90;
+  /*z-index: 90;*/
 }
 
 .contacts {
   position: absolute;
   top: 0;
-  left: 7px;
+  left: 0;
 
-  width: 206px;
-  margin: 0 auto;
-  padding-right: 20px;
-  padding-bottom: 25px;
-  padding-left: 22px;
+  width: 203px;
+  padding: 25px 15px;
+  padding-top: 10px;
 
   font-weight: 400;
   font-size: 16px;
@@ -820,23 +818,25 @@ h4 {
       -ms-transform: translateY(-138%);
        -o-transform: translateY(-138%);
           transform: translateY(-138%);
+  outline: 1px red solid;
 }
 
 .contacts-title {
-  margin-bottom: 25px;
-
+padding: 5px 0;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
   font-family: "Roboto Medium", Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
+  margin-bottom: 6px;
 }
 
 .contacts-phone {
   display: block;
-  margin-top: 25px;
+  margin-top: 10px;
   margin-bottom: 25px;
+  padding-top: 10px;
 }
 
 .contacts-phone a {
@@ -845,9 +845,9 @@ h4 {
 }
 
 .contacts-email {
-  padding-right: 53px;
-  padding-left: 53px;
-
+  padding: 10px 53px;
+  margin: 0 auto;
+  margin-top: 5px;
   font-weight: 700;
   font-size: 12px;
   line-height: 18px;
@@ -864,18 +864,6 @@ h4 {
 .contacts-email:active {
   background-color: #b63538;
   box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.15);
-}
-
-.contacts-map-bubble {
-  position: absolute;
-  top: 0;
-  left: 689px;
-
-  -webkit-transform: translateY(-164%);
-     -moz-transform: translateY(-164%);
-      -ms-transform: translateY(-164%);
-       -o-transform: translateY(-164%);
-          transform: translateY(-164%);
 }
 
 .footer-social {
