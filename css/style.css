@@ -62,6 +62,11 @@ h4 {
   cursor: pointer;
 }
 
+.img {
+  min-width: 100%;
+  height: auto;
+}
+
 .clearfix:before,
 .clearfix:after {
   content: "";
@@ -430,6 +435,11 @@ h4 {
 .service-picture {
   margin: 0;
   padding: 0;
+}
+
+.service-picture img {
+  width: 240px;
+  height: 124px;
 }
 
 .service-description-title {
@@ -1456,6 +1466,10 @@ h4 {
   vertical-align: top;
 }
 
+.catalog-gallery-item img {
+  width: 240px;
+  height: 240px;
+}
 .catalog-gallery-item:nth-child(2n) {
   margin-right: 0;
 }
