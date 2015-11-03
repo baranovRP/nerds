@@ -101,8 +101,6 @@ h4 {
   background-color: #eeeeee;
 }
 
-
-
 .header-logo {
   width: 140px;
   padding-top: 45px;
@@ -221,16 +219,12 @@ h4 {
 
 .basket-icon:hover {
   color: #fb565a;
-
-  transition-duration: 0.3s;
 }
 
 .basket-icon:active {
   color: #000000;
 
   opacity: 0.4;
-
-  transition-duration: 0.3s;
 }
 
 .basket-icon::before {
@@ -248,15 +242,11 @@ h4 {
 
 .basket-icon:hover::before {
   background-position: -5px -201px;
-
-  transition-duration: 0.3s;
 }
 
 .basket-icon:active::before {
   background-position: -5px 0;
   opacity: 0.5;
-
-  transition-duration: 0.3s;
 }
 
 .slider-container {
@@ -1083,6 +1073,10 @@ h4 {
 .min-price {
   margin-right: 14px;
 }
+
+.max-price {
+  float: right;
+}
 /* END Filter price */
 
 
@@ -1483,7 +1477,7 @@ h4 {
   width: 100%;
 }
 
-.decorate-dots label {
+.decorate-dots span {
   display: inline-block;
   width: 4px;
   height: 4px;
