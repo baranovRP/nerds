@@ -774,6 +774,10 @@ h4 {
   padding-left: 8px;
 }
 
+#map-container {
+  width: 100%;
+  height: 416px;
+}
 .map-container {
   position: relative;
 

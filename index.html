@@ -175,13 +175,7 @@
 
 <div class="container-contacts">
 
-  <iframe class="map-container"
-          width="100%"
-          height="416"
-          frameborder="0" style="border:0"
-          src="https://www.google.com/maps/embed/v1/view?&key=AIzaSyAo5vouRCNe7552sixQ_m_YetSeFOzFr80&center=59.939099,30.319826&maptype=roadmap&zoom=17&language=ru"
-          allowfullscreen>
-  </iframe>
+  <div class="map-container" id="map-container"></div>
 
   <div class="contacts-holder container">
     <div class="contacts">
@@ -190,10 +184,6 @@
       ул. Б. Конюшенная, д. 19/8
       <span class="contacts-phone"><a href="tel:+7-812-275-75-75">тел. +7 (812) 275-75-75</a></span>
       <a class="contacts-email btn" href="mailto:someone@example.com?Subject=Hello">Напишите нам</a>
-    </div>
-
-    <div class="contacts-map-pointer">
-      <img class="contacts-map-bubble" src="img/contacts-map-logo.png" width="231" height="190" alt="">
     </div>
   </div>
 
@@ -231,5 +221,13 @@
     <input class="cancel btn to-right" type="submit" value="Отмена">
   </form>
 </div>
+
+<!-- connect map -->
+<script src="js/contact-map.js"></script>
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAo5vouRCNe7552sixQ_m_YetSeFOzFr80&maptype=roadmap&language=ru&callback=initMap&signed_in=true"
+  async defer>
+</script>
+
 </body>
 </html>
