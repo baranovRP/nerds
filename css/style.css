@@ -129,6 +129,8 @@ h4 {
   padding: 0;
   padding-right: 44px;
 
+  /*Сделай поменьше паддинг справа (на 1px)*/
+
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -254,6 +256,8 @@ h4 {
   padding-bottom: 13px;
 
   background-color: #eeeeee;
+
+  /*Добавь overflow:hidden, чтобы у тебя не появлялся горизонтальный скроллбар из-за переполнения по ширине*/
 }
 
 /* START slider */
@@ -275,6 +279,11 @@ h4 {
   width: 300%;
 
   transition: transform 0.8s ease;
+
+  /*
+    Давай уберём плавный переход? Мне кажется не очень красиво смотриться, когда ты листаешь, и видишь часть проезжающего контента.
+    Или увеличить скорость до 300 мc
+  */
 }
 
 .slider-slides .slide {
@@ -716,6 +725,12 @@ h4 {
   background-color: #eeeeee;
 }
 
+/*
+  Абсолютно спозиционированные линии на главной странице не очень уместны, на их расположение лучше, чтобы влиял контент в блоке.
+  Рекомендую задавать border-bottom
+*/
+
+
 .clients::after {
   top: 1001px;
   left: 0;
@@ -751,6 +766,10 @@ h4 {
   display: inline-block;
 }
 
+/*
+  Всем блочно-строчным элементам пропиши пожалуйста вертикальное выравнивание
+*/
+
 .client:nth-child(1) {
   margin-right: 112px;
 }
@@ -785,6 +804,15 @@ h4 {
 
   pointer-events: none;
 }
+
+/*
+  теперь, когда ты добавил карту, с помощью АПИ гугла, можешь убрать свойство pointer-events, и прописать необходимое свойство в js
+
+  https://developers.google.com/maps/documentation/javascript/reference
+
+  scrollwheel: false
+
+*/
 
 .map-layer {
   z-index: 100;
@@ -857,6 +885,12 @@ padding: 5px 0;
   pointer-events: auto;
 }
 
+/*
+
+  Поправь кнопку. Если хочешь выровнять её посередине, например, сделай её блочно-строчной. А родителю задай text-align:center;
+
+*/
+
 .contacts-email:hover {
   background-color: #d6494d;
 }
@@ -907,6 +941,13 @@ padding: 5px 0;
 .social-btn-inst {
   background-position: 18px -126px;
 }
+
+/*
+
+  Лучше паддинги сверху и снизу задай футеру.
+  Нижний отступ у футера маленький (Если так по дизайну, не меняй, я ещё не накладываю макет).
+
+*/
 
 .footer-slogan {
   margin-top: 73px;
