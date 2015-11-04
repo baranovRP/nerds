@@ -1,13 +1,8 @@
-/*
-
-  Да, хорошо, молодец!
-
-*/
-
 function initMap() {
 
   var map = new google.maps.Map(document.getElementById('map-container'), {
     zoom: 17,
+    scrollwheel:false,
     center: {
       lat: 59.939098,
       lng: 30.319898

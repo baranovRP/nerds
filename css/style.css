@@ -127,9 +127,7 @@ h4 {
 .main-navigation li {
   display: inline-block;
   padding: 0;
-  padding-right: 44px;
-
-  /*Сделай поменьше паддинг справа (на 1px)*/
+  padding-right: 43px;
 
   font-weight: 400;
   font-size: 14px;
@@ -254,10 +252,9 @@ h4 {
 .slider-container {
   height: 320px;
   padding-bottom: 13px;
+  overflow: hidden;
 
   background-color: #eeeeee;
-
-  /*Добавь overflow:hidden, чтобы у тебя не появлялся горизонтальный скроллбар из-за переполнения по ширине*/
 }
 
 /* START slider */
@@ -278,12 +275,7 @@ h4 {
 .slider-slides {
   width: 300%;
 
-  transition: transform 0.8s ease;
-
-  /*
-    Давай уберём плавный переход? Мне кажется не очень красиво смотриться, когда ты листаешь, и видишь часть проезжающего контента.
-    Или увеличить скорость до 300 мc
-  */
+  transition: transform 300ms ease;
 }
 
 .slider-slides .slide {
@@ -411,11 +403,15 @@ h4 {
 
 .main {
   padding-top: 25px;
-  padding-bottom: 115px;
+  padding-bottom: 85px;
 }
 .services {
-  margin-bottom: 20px;
+  min-height: 350px;
+  margin-bottom: 0;
   padding-top: 56px;
+  padding-bottom: 30px;
+
+  border-bottom: 2px solid #eeeeee;
 }
 
 .service {
@@ -526,26 +522,19 @@ h4 {
 .about {
   position: relative;
 
+  min-height: 400px;
   margin-bottom: 10px;
-}
+  padding-top: 50px;
+  padding-bottom: 20px;
 
-.about::before {
-  content: "";
-  position: absolute;
-  top: 359px;
-  left: 0;
-
-  width: 100%;
-  height: 2px;
-
-  background-color: #eeeeee;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .about-orders {
   width: 610px;
-  min-height: 450px;
+  min-height: 400px;
   margin: 0;
-  margin-top: 79px;
+  margin-top: 17px;
   margin-right: 20px;
 
   font-weight: 400;
@@ -557,9 +546,9 @@ h4 {
 
 .about-work {
   width: 250px;
-  min-height: 450px;
+  min-height: 400px;
   margin: 0;
-  margin-top: 70px;
+  margin-top: 8px;
 
   font-weight: 400;
   font-size: 16px;
@@ -710,30 +699,12 @@ h4 {
 
 .clients {
   position: relative;
-}
 
-.clients::before,
-.clients::after {
-  content: "";
-  position: absolute;
-  top: 833px;
-  left: 0;
+  min-height: 100px;
+  padding-top: 35px;
+  padding-bottom: 22px;
 
-  width: 100%;
-  height: 2px;
-
-  background-color: #eeeeee;
-}
-
-/*
-  Абсолютно спозиционированные линии на главной странице не очень уместны, на их расположение лучше, чтобы влиял контент в блоке.
-  Рекомендую задавать border-bottom
-*/
-
-
-.clients::after {
-  top: 1001px;
-  left: 0;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .client {
@@ -764,11 +735,9 @@ h4 {
 
 .client a {
   display: inline-block;
-}
 
-/*
-  Всем блочно-строчным элементам пропиши пожалуйста вертикальное выравнивание
-*/
+  vertical-align: middle;
+}
 
 .client:nth-child(1) {
   margin-right: 112px;
@@ -801,18 +770,7 @@ h4 {
   position: relative;
 
   width: 100%;
-
-  pointer-events: none;
 }
-
-/*
-  теперь, когда ты добавил карту, с помощью АПИ гугла, можешь убрать свойство pointer-events, и прописать необходимое свойство в js
-
-  https://developers.google.com/maps/documentation/javascript/reference
-
-  scrollwheel: false
-
-*/
 
 .map-layer {
   z-index: 100;
@@ -822,7 +780,6 @@ h4 {
 
 .container-contacts .container {
   position: relative;
-  /*z-index: 90;*/
 }
 
 .contacts {
@@ -830,7 +787,7 @@ h4 {
   top: 0;
   left: 0;
 
-  width: 203px;
+  width: 205px;
   padding: 25px 15px;
   padding-top: 10px;
 
@@ -838,6 +795,7 @@ h4 {
   font-size: 16px;
   line-height: 20px;
   font-family: "Roboto Medium", Arial, sans-serif;
+  text-align: center;
   color: #666666;
 
   background-color: #ffffff;
@@ -846,18 +804,25 @@ h4 {
       -ms-transform: translateY(-138%);
        -o-transform: translateY(-138%);
           transform: translateY(-138%);
-  outline: 1px red solid;
 }
 
 .contacts-title {
-padding: 5px 0;
+  margin-bottom: 6px;
+  padding: 5px 0;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
   font-family: "Roboto Medium", Arial, sans-serif;
+  text-align: left;
   color: #000000;
   text-transform: uppercase;
-  margin-bottom: 6px;
+}
+
+.contacts-title + span {
+  display: block;
+
+  text-align: left;
 }
 
 .contacts-phone {
@@ -865,6 +830,8 @@ padding: 5px 0;
   margin-top: 10px;
   margin-bottom: 25px;
   padding-top: 10px;
+
+  text-align: left;
 }
 
 .contacts-phone a {
@@ -873,23 +840,16 @@ padding: 5px 0;
 }
 
 .contacts-email {
-  padding: 10px 53px;
   margin: 0 auto;
   margin-top: 5px;
+  padding: 10px 53px;
+
   font-weight: 700;
   font-size: 12px;
   line-height: 18px;
   font-family: "Roboto Medium", Arial, sans-serif;
   color: #ffffff;
-
-  pointer-events: auto;
 }
-
-/*
-
-  Поправь кнопку. Если хочешь выровнять её посередине, например, сделай её блочно-строчной. А родителю задай text-align:center;
-
-*/
 
 .contacts-email:hover {
   background-color: #d6494d;
@@ -900,10 +860,15 @@ padding: 5px 0;
   box-shadow: inset 0 3px 0 rgba(0, 0, 0, 0.15);
 }
 
+.main-footer {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
 .footer-social {
   width: 270px;
   margin: 0 auto;
-  padding-top: 79px;
+  padding-top: 9px;
   padding-right: 25px;
 }
 
@@ -942,15 +907,8 @@ padding: 5px 0;
   background-position: 18px -126px;
 }
 
-/*
-
-  Лучше паддинги сверху и снизу задай футеру.
-  Нижний отступ у футера маленький (Если так по дизайну, не меняй, я ещё не накладываю макет).
-
-*/
-
 .footer-slogan {
-  margin-top: 73px;
+  margin-top: 3px;
   padding-right: 21px;
 
   font-weight: 700;
@@ -968,6 +926,12 @@ padding: 5px 0;
   line-height: 36px;
   font-family: "Roboto Medium", Arial, sans-serif;
   color: #000000;
+}
+
+.footer-title + p {
+  margin: 0;
+  margin-top: 16px;
+  margin-bottom: 6px;
 }
 /* END index page*/
 
@@ -1533,6 +1497,8 @@ padding: 5px 0;
   width: 240px;
   height: 30px;
 
+  vertical-align: top;
+
   background-color: #000000;
   opacity: 0.1;
 }
@@ -1601,6 +1567,7 @@ padding: 5px 0;
   font-size: 18px;
   line-height: 9px;
   font-family: "Roboto Medium", Arial, sans-serif;
+  vertical-align: top;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
@@ -1795,6 +1762,7 @@ padding: 5px 0;
   font-size: 12px;
   line-height: 18px;
   font-family: "Roboto Medium", Arial, sans-serif;
+  vertical-align: top;
   color: #000000;
 
   background-color: #f1f1f1;
