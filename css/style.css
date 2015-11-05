@@ -780,6 +780,7 @@ h4 {
 
 .container-contacts .container {
   position: relative;
+  outline: 1px red solid;
 }
 
 .contacts {
