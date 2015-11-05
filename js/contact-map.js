@@ -18,7 +18,7 @@ function initMap() {
   var contactLogo = {
     url: 'img/contacts-map-logo.png',
     size: new google.maps.Size(231, 190),
-    anchor: new google.maps.Point(53, 158)
+    anchor: new google.maps.Point(59, 152)
   };
 
   var marker = new google.maps.Marker({

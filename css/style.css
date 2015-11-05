@@ -762,34 +762,35 @@ h4 {
   padding-left: 8px;
 }
 
+.container-contacts {
+  position: relative;
+}
+
 #map-container {
   width: 100%;
   height: 416px;
 }
 .map-container {
-  position: relative;
-
   width: 100%;
 }
 
-.map-layer {
-  z-index: 100;
+.contacts-holder {
+  position: absolute;
+  top: 0;
+  left: 50%;
 
-  vertical-align: top;
-}
-
-.container-contacts .container {
-  position: relative;
-  outline: 1px red solid;
+  height: 416px;
+  margin-left: -450px;
 }
 
 .contacts {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 11px;
 
   width: 205px;
-  padding: 25px 15px;
+  min-height: 200px;
+  padding: 25px 20px;
   padding-top: 10px;
 
   font-weight: 400;
@@ -800,16 +801,18 @@ h4 {
   color: #666666;
 
   background-color: #ffffff;
-  -webkit-transform: translateY(-138%);
-     -moz-transform: translateY(-138%);
-      -ms-transform: translateY(-138%);
-       -o-transform: translateY(-138%);
-          transform: translateY(-138%);
+  -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+       -o-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .contacts-title {
-  margin-bottom: 6px;
+  margin: 0;
+  margin-bottom: 8px;
   padding: 5px 0;
+  padding-top: 12px;
 
   font-weight: 700;
   font-size: 16px;
@@ -841,9 +844,10 @@ h4 {
 }
 
 .contacts-email {
+  width: 205px;
   margin: 0 auto;
   margin-top: 5px;
-  padding: 10px 53px;
+  padding: 10px 0;
 
   font-weight: 700;
   font-size: 12px;
