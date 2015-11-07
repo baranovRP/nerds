@@ -779,6 +779,11 @@ h4 {
 }
 .map-container {
   width: 100%;
+
+  background-color: #ffffff;
+  background-image: url(../img/contacts-map.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
 }
 
 .contacts-holder {
