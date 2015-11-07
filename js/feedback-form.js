@@ -29,10 +29,13 @@ link.addEventListener("click", function (event) {
     var isStorageEmailPresent = true;
   }
   if (isStorageNicknamePresent && isStorageEmailPresent) {
+    nickname.value = storageNickname;
+    email.value = storageEmail;
     message.value = "";
     message.focus();
   }
   else if (isStorageNicknamePresent) {
+    nickname.value = storageNickname;
     email.value = "";
     email.focus();
   }
