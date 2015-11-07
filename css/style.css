@@ -410,6 +410,7 @@ h4 {
   margin-bottom: 0;
   padding-top: 56px;
   padding-bottom: 30px;
+  overflow: hidden;
 
   border-bottom: 2px solid #eeeeee;
 }
