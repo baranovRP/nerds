@@ -334,6 +334,11 @@ h4 {
   padding: 0;
 }
 
+/* fix empty space under image*/
+.slider-picture img {
+  vertical-align: top;
+}
+
 .slider-controls {
   position: absolute;
   bottom: 83px;
@@ -411,7 +416,7 @@ h4 {
   min-height: 350px;
   margin-bottom: 0;
   padding-top: 56px;
-  padding-bottom: 4px;
+  padding-bottom: 8px;
   overflow: hidden;
 
   border-bottom: 2px solid #eeeeee;
@@ -706,7 +711,7 @@ h4 {
 
   min-height: 100px;
   padding-top: 35px;
-  padding-bottom: 22px;
+  padding-bottom: 21px;
   overflow: hidden;
 
   border-bottom: 2px solid #eeeeee;
