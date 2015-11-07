@@ -98,7 +98,7 @@ cancel.addEventListener("click", function (evene) {
 });
 
 form.addEventListener("submit", function (event) {
-  if (!nickname.value || !email.value || !message.value) {
+  if (nickname.value === defNickname || email.value === defEmail || message.value === defMessage) {
     event.preventDefault();
     popup.classList.remove("modal-error");
     popup.offsetWidth = popup.offsetWidth;
