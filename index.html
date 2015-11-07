@@ -205,11 +205,11 @@
 </footer>
 
 <!-- normally hidden -->
-<div class="model-content hidden">
-  <div class="model-content-close">Закрыть</div>
+<div class="modal-content hidden">
+  <div class="modal-content-close">Закрыть</div>
   <form class="feedback-form" action="/echo" method="post">
     <label class="text control to-left">Ваше имя:
-      <input type="text" name="name" id="feedback-name" value="Представьтесь, пожалуйста">
+      <input type="text" name="nickname" id="feedback-name" value="Представьтесь, пожалуйста">
     </label>
     <label class="text control to-right">Ваш e-mail:
       <input type="text" name="email" id="feedback-email" value="Для отправки ответа">
@@ -223,6 +223,7 @@
 </div>
 
 <!-- connect map -->
+<script src="js/feedback-form.js"></script>
 <script src="js/contact-map.js"></script>
 <script
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAo5vouRCNe7552sixQ_m_YetSeFOzFr80&maptype=roadmap&language=ru&callback=initMap&signed_in=true"
