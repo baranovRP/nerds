@@ -50,15 +50,26 @@ nickname.addEventListener("click", function (event) {
   nickname.focus();
 });
 
+nickname.addEventListener("blur", function (event) {
+  event.preventDefault();
+  if (!nickname.value) {
+    nickname.value = defNickname;
+  }
+});
+
 email.addEventListener("click", function (event) {
   event.preventDefault();
   if (email.value === defEmail) {
     email.value = "";
-    if (nickname.value != storageNickname) {
-      nickname.value = defMessage;
-    }
   }
   email.focus();
+});
+
+email.addEventListener("blur", function (event) {
+  event.preventDefault();
+  if (!email.value) {
+    email.value = defEmail;
+  }
 });
 
 message.addEventListener("click", function (event) {
@@ -67,20 +78,6 @@ message.addEventListener("click", function (event) {
     message.value = "";
   }
   message.focus();
-});
-
-nickname.addEventListener("blur", function (event) {
-  event.preventDefault();
-  if (!nickname.value) {
-    nickname.value = defNickname;
-  }
-});
-
-email.addEventListener("blur", function (event) {
-  event.preventDefault();
-  if (!email.value) {
-    email.value = defEmail;
-  }
 });
 
 message.addEventListener("blur", function (event) {
