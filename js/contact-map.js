@@ -1,6 +1,6 @@
 function initMap() {
 
-  var map = new google.maps.Map(document.getElementById('map-container'), {
+  var map = new google.maps.Map(document.getElementById("map-container"), {
     zoom: 17,
     scrollwheel:false,
     center: {
@@ -16,7 +16,7 @@ function initMap() {
   };
 
   var contactLogo = {
-    url: 'img/contacts-map-logo.png',
+    url: "img/contacts-map-logo.png",
     size: new google.maps.Size(231, 190),
     anchor: new google.maps.Point(59, 152)
   };

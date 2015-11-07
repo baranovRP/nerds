@@ -1,263 +1,263 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang='ru'>
 <head>
-  <meta charset="UTF-8">
+  <meta charset='UTF-8'>
   <title>Дизайн-студия «Нёрдс»: Каталог</title>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300&subset=latin,cyrillic' rel='stylesheet'>
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href='css/normalize.css' rel='stylesheet'>
+  <link href='css/style.css' rel='stylesheet'>
 </head>
 <body>
-<header class="main-header">
-  <div class="container clearfix">
-    <div class="header-logo to-left">
-      <a href=".">
-        <img src="img/logo.png" width="139" height="56" alt="Лого дизайн-студии «Нёрдс»">
+<header class='main-header'>
+  <div class='container clearfix'>
+    <div class='header-logo to-left'>
+      <a href='.'>
+        <img src='img/logo.png' width='139' height='56' alt='Лого дизайн-студии «Нёрдс»'>
       </a>
     </div>
-    <nav class="main-navigation to-left col">
+    <nav class='main-navigation to-left col'>
       <ul>
-        <li><a href=".">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li class="active"><a href="catalog.html">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li><a href='.'>Студия</a></li>
+        <li><a href='#'>Клиенты</a></li>
+        <li class='active'><a href='catalog.html'>Магазин</a></li>
+        <li><a href='#'>Контакты</a></li>
       </ul>
     </nav>
-    <div class="shop-basket-navigation to-right col">
-      <a class="basket-icon" href="#">Корзина</a>
+    <div class='shop-basket-navigation to-right col'>
+      <a class='basket-icon' href='#'>Корзина</a>
     </div>
   </div>
 </header>
 
-<div class="container-page-title">
-  <div class="container clearfix">
-    <h1 class="main-header-title container">Добро пожаловать в магазин<br>
+<div class='container-page-title'>
+  <div class='container clearfix'>
+    <h1 class='main-header-title container'>Добро пожаловать в магазин<br>
       готовых макетов
     </h1>
   </div>
 </div>
 
-<div class="container-catalog">
-  <div class="container clearfix">
-    <div class="catalog-filters catalog-col to-left">
-      <form action="/echo" method="get" id="form-filters">
-        <fieldset class="filter-price filter">
-          <legend class="filter-price-title">Стоимость:</legend>
-          <div class="range-filter">
-            <div class="range-controls">
-              <div class="scale">
-                <div class="bar"></div>
+<div class='container-catalog'>
+  <div class='container clearfix'>
+    <div class='catalog-filters catalog-col to-left'>
+      <form action='/echo' method='get' id='form-filters'>
+        <fieldset class='filter-price filter'>
+          <legend class='filter-price-title'>Стоимость:</legend>
+          <div class='range-filter'>
+            <div class='range-controls'>
+              <div class='scale'>
+                <div class='bar'></div>
               </div>
-              <div class="toggle min-toggle"></div>
-              <div class="toggle max-toggle"></div>
+              <div class='toggle min-toggle'></div>
+              <div class='toggle max-toggle'></div>
             </div>
-            <div class="price-controls">
+            <div class='price-controls'>
               <label>
-                от <input class="min-price" type="text" value="0" id="min-price">
+                от <input class='min-price' type='text' value='0' id='min-price'>
               </label>
               <label>
-                до <input class="max-price" type="text" value="15000" id="max-price">
+                до <input class='max-price' type='text' value='15000' id='max-price'>
               </label>
             </div>
           </div>
         </fieldset>
 
-        <fieldset class="filter-grid filter">
-          <legend class="filter-grid-title">Сетка:</legend>
-          <label class="control radio">
-            <input type="radio" checked name="choose-grid" value="grid-adaptive" id="radio-adaptive">Адаптивная
-            <span class="control-indicator"></span>
+        <fieldset class='filter-grid filter'>
+          <legend class='filter-grid-title'>Сетка:</legend>
+          <label class='control radio'>
+            <input type='radio' checked name='choose-grid' value='grid-adaptive' id='radio-adaptive'>Адаптивная
+            <span class='control-indicator'></span>
           </label>
-          <label class="control radio">
-            <input type="radio" name="choose-grid" value="grid-fixed" id="radio-fixed">Фиксированная
-            <span class="control-indicator"></span>
+          <label class='control radio'>
+            <input type='radio' name='choose-grid' value='grid-fixed' id='radio-fixed'>Фиксированная
+            <span class='control-indicator'></span>
           </label>
-          <label class="control radio">
-            <input type="radio" name="choose-grid" value="grid-rubber" id="radio-rubber">Резиновая
-            <span class="control-indicator"></span>
-          </label>
-        </fieldset>
-
-        <fieldset class="filter-features filter">
-          <legend class="filter-features-title">Особенности:</legend>
-          <label class="control checkbox">
-            <input type="checkbox" checked name="tick-slider" id="checkbox-slider">Слайдер
-            <span class="control-indicator"></span>
-          </label>
-          <label class="control checkbox">
-            <input type="checkbox" name="tick-advantages" id="checkbox-advantages">Блок преимуществ
-            <span class="control-indicator"></span>
-          </label>
-          <label class="control checkbox">
-            <input type="checkbox" checked name="tick-news" id="checkbox-news">Новости
-            <span class="control-indicator"></span>
-          </label>
-          <label class="control checkbox">
-            <input type="checkbox" name="tick-gallery" id="checkbox-gallery">Галерея
-            <span class="control-indicator"></span>
-          </label>
-          <label class="control checkbox">
-            <input type="checkbox" name="tick-basket" id="checkbox-basket">Корзина
-            <span class="control-indicator"></span>
+          <label class='control radio'>
+            <input type='radio' name='choose-grid' value='grid-rubber' id='radio-rubber'>Резиновая
+            <span class='control-indicator'></span>
           </label>
         </fieldset>
 
-        <input class="btn" type="submit" value="Показать">
+        <fieldset class='filter-features filter'>
+          <legend class='filter-features-title'>Особенности:</legend>
+          <label class='control checkbox'>
+            <input type='checkbox' checked name='tick-slider' id='checkbox-slider'>Слайдер
+            <span class='control-indicator'></span>
+          </label>
+          <label class='control checkbox'>
+            <input type='checkbox' name='tick-advantages' id='checkbox-advantages'>Блок преимуществ
+            <span class='control-indicator'></span>
+          </label>
+          <label class='control checkbox'>
+            <input type='checkbox' checked name='tick-news' id='checkbox-news'>Новости
+            <span class='control-indicator'></span>
+          </label>
+          <label class='control checkbox'>
+            <input type='checkbox' name='tick-gallery' id='checkbox-gallery'>Галерея
+            <span class='control-indicator'></span>
+          </label>
+          <label class='control checkbox'>
+            <input type='checkbox' name='tick-basket' id='checkbox-basket'>Корзина
+            <span class='control-indicator'></span>
+          </label>
+        </fieldset>
+
+        <input class='btn' type='submit' value='Показать'>
       </form>
     </div>
-    <div class="catalog-content catalog-col to-right">
-      <div class="catalog-sort clearfix">
-        <div class="catalog-sort-title to-left">Сортировать:</div>
-        <div class="catalog-sort-content to-left">
-          <a href="#">По цене</a>
-          <a href="#">По типу</a>
-          <a href="#">По функционалу</a>
+    <div class='catalog-content catalog-col to-right'>
+      <div class='catalog-sort clearfix'>
+        <div class='catalog-sort-title to-left'>Сортировать:</div>
+        <div class='catalog-sort-content to-left'>
+          <a href='#'>По цене</a>
+          <a href='#'>По типу</a>
+          <a href='#'>По функционалу</a>
         </div>
-        <div class="catalog-sort-arrows to-right">
-          <a class="descent active" href="#"></a>
-          <a class="ascent" href="#"></a>
+        <div class='catalog-sort-arrows to-right'>
+          <a class='descent active' href='#'></a>
+          <a class='ascent' href='#'></a>
         </div>
       </div>
-      <div class="catalog-gallery">
-        <article class="catalog-gallery-item">-->
+      <div class='catalog-gallery'>
+        <article class='catalog-gallery-item'>-->
           <!-- Only for decoration purpose -->
-          <div class="decorate-dots">
+          <div class='decorate-dots'>
             <span></span>
             <span></span>
             <span></span>
           </div>
-          <a class="miniature" href="#">
-            <img src="img/catalog-gallery-item-aviator.jpg" width="240" height="240" alt="Сайт «Aviator»">
+          <a class='miniature' href='#'>
+            <img src='img/catalog-gallery-item-aviator.jpg' width='240' height='240' alt='Сайт «Aviator»'>
           </a>
           <!-- start Layout item -->
           <!-- Normally hidden, should be visible with hoover-->
-          <div class="item-price hidden">
-            <div class="item-price-details">
-              <h2 class="item-price-title">Aviator</h2>
+          <div class='item-price hidden'>
+            <div class='item-price-details'>
+              <h2 class='item-price-title'>Aviator</h2>
 
               <p>Одностраничный макет с авторским дизайном</p>
-              <span class="price"><a class="btn" href="#">8000 Р.</a></span>
+              <span class='price'><a class='btn' href='#'>8000 Р.</a></span>
             </div>
           </div>
           <!-- end Layout item -->
         </article>
-        <article class="catalog-gallery-item active">
+        <article class='catalog-gallery-item active'>
           <!-- Only for decoration purpose -->
-          <div class="decorate-dots">
+          <div class='decorate-dots'>
             <span></span>
             <span></span>
             <span></span>
           </div>
-          <a class="miniature" href="#">
-            <img src="img/catalog-gallery-item-sunset.jpg" width="240" height="240" alt="Сайт «Sunset»">
+          <a class='miniature' href='#'>
+            <img src='img/catalog-gallery-item-sunset.jpg' width='240' height='240' alt='Сайт «Sunset»'>
           </a>
           <!-- start Layout item -->
           <!-- Normally hidden, should be visible with hoover-->
-          <div class="item-price hidden">
-            <div class="item-price-details">
-              <h2 class="item-price-title">Sunset</h2>
+          <div class='item-price hidden'>
+            <div class='item-price-details'>
+              <h2 class='item-price-title'>Sunset</h2>
 
               <p>Интернет-магазин с&nbspличным кабинетом</p>
-              <span class="price"><a class="btn" href="#">10000 Р.</a></span>
+              <span class='price'><a class='btn' href='#'>10000 Р.</a></span>
             </div>
           </div>
           <!-- end Layout item -->
         </article>
-        <article class="catalog-gallery-item">
+        <article class='catalog-gallery-item'>
           <!-- Only for decoration purpose -->
-          <div class="decorate-dots">
+          <div class='decorate-dots'>
             <span></span>
             <span></span>
             <span></span>
           </div>
-          <a class="miniature" href="#">
-            <img src="img/catalog-gallery-item-forte.jpg" width="240" height="240" alt="Сайт «Forte»">
+          <a class='miniature' href='#'>
+            <img src='img/catalog-gallery-item-forte.jpg' width='240' height='240' alt='Сайт «Forte»'>
           </a>
           <!-- start Layout item -->
           <!-- Normally hidden, should be visible with hoover-->
-          <div class="item-price hidden">
-            <div class="item-price-details">
-              <h2 class="item-price-title">Forte</h2>
+          <div class='item-price hidden'>
+            <div class='item-price-details'>
+              <h2 class='item-price-title'>Forte</h2>
 
               <p>Отличный макет&nbspдля личного блога</p>
-              <span class="price"><a class="btn" href="#">5000 Р.</a></span>
+              <span class='price'><a class='btn' href='#'>5000 Р.</a></span>
             </div>
           </div>
           <!-- end Layout item -->
         </article>
-        <article class="catalog-gallery-item">
+        <article class='catalog-gallery-item'>
           <!-- Only for decoration purpose -->
-          <div class="decorate-dots">
+          <div class='decorate-dots'>
             <span></span>
             <span></span>
             <span></span>
           </div>
-          <a class="miniature" href="#">
-            <img src="img/catalog-gallery-item-thai.jpg" width="240" height="240" alt="Сайт «Modern Organic Thai»">
+          <a class='miniature' href='#'>
+            <img src='img/catalog-gallery-item-thai.jpg' width='240' height='240' alt='Сайт «Modern Organic Thai»'>
           </a>
           <!-- start Layout item -->
           <!-- Normally hidden, should be visible with hoover-->
-          <div class="item-price hidden">
-            <div class="item-price-details">
-              <h2 class="item-price-title">Modern Organic Thai</h2>
+          <div class='item-price hidden'>
+            <div class='item-price-details'>
+              <h2 class='item-price-title'>Modern Organic Thai</h2>
 
               <p>Сайт для ресторана быстрого питания</p>
-              <span class="price"><a class="btn" href="#">12000 Р.</a></span>
+              <span class='price'><a class='btn' href='#'>12000 Р.</a></span>
             </div>
           </div>
           <!-- end Layout item -->
         </article>
-        <article class="catalog-gallery-item">
+        <article class='catalog-gallery-item'>
           <!-- Only for decoration purpose -->
-          <div class="decorate-dots">
+          <div class='decorate-dots'>
             <span></span>
             <span></span>
             <span></span>
           </div>
-          <a class="miniature" href="#">
-            <img src="img/catalog-gallery-item-avenue.jpg" width="239" height="240" alt="Сайт «Avenue»">
+          <a class='miniature' href='#'>
+            <img src='img/catalog-gallery-item-avenue.jpg' width='239' height='240' alt='Сайт «Avenue»'>
           </a>
           <!-- start Layout item -->
           <!-- Normally hidden, should be visible with hoover-->
-          <div class="item-price hidden">
-            <div class="item-price-details">
-              <h2 class="item-price-title">Avenue</h2>
+          <div class='item-price hidden'>
+            <div class='item-price-details'>
+              <h2 class='item-price-title'>Avenue</h2>
 
               <p>Макет для блога о путешествиях</p>
-              <span class="price"><a class="btn" href="#">8000 Р.</a></span>
+              <span class='price'><a class='btn' href='#'>8000 Р.</a></span>
             </div>
           </div>
           <!-- end Layout item -->
         </article>
-        <article class="catalog-gallery-item">
+        <article class='catalog-gallery-item'>
           <!-- Only for decoration purpose -->
-          <div class="decorate-dots">
+          <div class='decorate-dots'>
             <span></span>
             <span></span>
             <span></span>
           </div>
-          <a class="miniature" href="#">
-            <img src="img/catalog-gallery-item-dovetail.jpg" width="239" height="240" alt="Сайт «Dovetail»">
+          <a class='miniature' href='#'>
+            <img src='img/catalog-gallery-item-dovetail.jpg' width='239' height='240' alt='Сайт «Dovetail»'>
           </a>
           <!-- start Layout item -->
           <!-- Normally hidden, should be visible with hoover-->
-          <div class="item-price hidden">
-            <div class="item-price-details">
-              <h2 class="item-price-title">Dovetail</h2>
+          <div class='item-price hidden'>
+            <div class='item-price-details'>
+              <h2 class='item-price-title'>Dovetail</h2>
 
               <p>Интернет-магазин с галереей товаров</p>
-              <span class="price"><a class="btn" href="#">14000 Р.</a></span>
+              <span class='price'><a class='btn' href='#'>14000 Р.</a></span>
             </div>
           </div>
           <!-- end Layout item -->
         </article>
       </div>
-      <div class="catalog-footer">
-        <div class="pages">
-          <a class="btn page active" href="#">1</a>
-          <a class="btn page" href="#">2</a>
-          <a class="btn page" href="#">3</a>
-          <a class="btn page next" href="#">Следующая</a>
+      <div class='catalog-footer'>
+        <div class='pages'>
+          <a class='btn page active' href='#'>1</a>
+          <a class='btn page' href='#'>2</a>
+          <a class='btn page' href='#'>3</a>
+          <a class='btn page next' href='#'>Следующая</a>
         </div>
       </div>
     </div>
@@ -265,64 +265,64 @@
   </div>
 </div>
 
-<div class="container-contacts">
+<div class='container-contacts'>
 
-  <div class="map-container" id="map-container"></div>
+  <div class='map-container' id='map-container'></div>
 
-  <div class="contacts-holder container">
-    <div class="contacts">
-      <h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
+  <div class='contacts-holder container'>
+    <div class='contacts'>
+      <h3 class='contacts-title'>NЁRDS DESIGN STUDIO</h3>
       <span>191186, Санкт-Петербург,<br>
       ул. Б. Конюшенная, д. 19/8</span>
-      <span class="contacts-phone"><a href="tel:+7-812-275-75-75">тел. +7 (812) 275-75-75</a></span>
-      <a class="contacts-email btn" href="mailto:someone@example.com?Subject=Hello">Напишите нам</a>
+      <span class='contacts-phone'><a href='tel:+7-812-275-75-75'>тел. +7 (812) 275-75-75</a></span>
+      <a class='contacts-email btn' href='mailto:someone@example.com?Subject=Hello'>Напишите нам</a>
     </div>
   </div>
 
 </div>
 
-<footer class="main-footer">
-  <div class="container clearfix">
-    <div class="footer-social to-left">
-      <a class="social-btn social-btn-vk" href="#"></a>
-      <a class="social-btn social-btn-fb" href="#"></a>
-      <a class="social-btn social-btn-inst" href="#"></a>
+<footer class='main-footer'>
+  <div class='container clearfix'>
+    <div class='footer-social to-left'>
+      <a class='social-btn social-btn-vk' href='#'></a>
+      <a class='social-btn social-btn-fb' href='#'></a>
+      <a class='social-btn social-btn-inst' href='#'></a>
     </div>
 
-    <div class="footer-slogan to-right">
-      <div class="footer-title">Давайте дружить, это выгодно!</div>
+    <div class='footer-slogan to-right'>
+      <div class='footer-title'>Давайте дружить, это выгодно!</div>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
   </div>
 </footer>
 
 <!-- normally hidden -->
-<div class="modal-content hidden">
-  <div class="modal-content-close">Закрыть</div>
-  <form class="feedback-form" action="/echo" method="post">
-    <label class="text control to-left">Ваше имя:
-      <input type="text" name="nickname" id="feedback-name" value="Представьтесь, пожалуйста">
+<div class='modal-content hidden'>
+  <div class='modal-content-close'>Закрыть</div>
+  <form class='feedback-form' action='/echo' method='post'>
+    <label class='text control to-left'>Ваше имя:
+      <input type='text' name='nickname' id='feedback-name' value='Представьтесь, пожалуйста'>
     </label>
-    <label class="text control to-right">Ваш e-mail:
-      <input type="text" name="email" id="feedback-email" value="Для отправки ответа">
+    <label class='text control to-right'>Ваш e-mail:
+      <input type='text' name='email' id='feedback-email' value='Для отправки ответа'>
     </label>
-    <label class="textarea control to-left">Текст письма:
-      <textarea name="content" id="feedback-email-content">В свободной форме</textarea>
-    </label>
-    <label>
-      <input class="send btn to-left active" type="submit" id="feedback-send" value="Отправить">
+    <label class='textarea control to-left'>Текст письма:
+      <textarea name='content' id='feedback-email-content'>В свободной форме</textarea>
     </label>
     <label>
-      <input class="cancel btn to-right" type="submit" id="feedback-cancel" value="Отмена">
+      <input class='send btn to-left active' type='submit' id='feedback-send' value='Отправить'>
+    </label>
+    <label>
+      <input class='cancel btn to-right' type='submit' id='feedback-cancel' value='Отмена'>
     </label>
   </form>
 </div>
 
 <!-- connect map -->
-<script src="js/feedback-form.js"></script>
-<script src="js/contact-map.js"></script>
+<script src='js/feedback-form.js'></script>
+<script src='js/contact-map.js'></script>
 <script
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAo5vouRCNe7552sixQ_m_YetSeFOzFr80&maptype=roadmap&language=ru&callback=initMap&signed_in=true"
+  src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAo5vouRCNe7552sixQ_m_YetSeFOzFr80&maptype=roadmap&language=ru&callback=initMap&signed_in=true'
   async defer>
 </script>
 
