@@ -1842,7 +1842,32 @@ h4 {
   }
 }
 .modal-error {
-  background-color: #fb565a;
+  animation: flash 1s;
+}
 
-  transition: background-color 1s linear;
+@keyframes flash {
+  0% {
+    background-color: #fb565a;
+
+    transition: background-color 1s linear;
+  }
+  20% {
+    background-color: #ffffff;
+  }
+  40% {
+    background-color: #fb565a;
+
+    transition: background-color 1s linear;
+  }
+  60% {
+    background-color: #ffffff;
+  }
+  80% {
+    background-color: #fb565a;
+
+    transition: background-color 1s linear;
+  }
+  100% {
+    background-color: #ffffff;
+  }
 }
