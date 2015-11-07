@@ -250,8 +250,7 @@ h4 {
 }
 
 .slider-container {
-  height: 320px;
-  padding-bottom: 13px;
+  min-height: 319px;
   overflow: hidden;
 
   background-color: #eeeeee;
@@ -261,7 +260,9 @@ h4 {
 .slider {
   position: relative;
 
+  min-height: 319px;
   padding-top: 15px;
+  overflow: hidden;
 }
 
 .slider input[type=radio] {
@@ -269,6 +270,7 @@ h4 {
 }
 
 .slider-inner {
+  min-height: 319px;
   overflow: hidden;
 }
 
@@ -281,7 +283,7 @@ h4 {
 .slider-slides .slide {
   float: left;
   width: 880px;
-  height: 319px;
+  min-height: 319px;
 }
 
 .slider-content {
@@ -409,7 +411,7 @@ h4 {
   min-height: 350px;
   margin-bottom: 0;
   padding-top: 56px;
-  padding-bottom: 30px;
+  padding-bottom: 4px;
   overflow: hidden;
 
   border-bottom: 2px solid #eeeeee;
@@ -526,7 +528,7 @@ h4 {
   min-height: 400px;
   margin-bottom: 10px;
   padding-top: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
   overflow: hidden;
 
   border-bottom: 2px solid #eeeeee;
