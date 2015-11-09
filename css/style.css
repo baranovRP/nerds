@@ -261,8 +261,8 @@ select,
 textarea {
   margin: 0; /* 1 */
 
-  font: inherit; /* 3 */
-  color: inherit; /* 2 */
+  font: inherit; /* 2 */
+  color: inherit; /* 3 */
 }
 
 /**
@@ -294,10 +294,10 @@ select {
  */
 
 button,
-html input[type="button"],
+html input[type='button'],
 /* 1 */
-input[type="reset"],
-input[type="submit"] {
+input[type='reset'],
+input[type='submit'] {
   cursor: pointer; /* 2 */
 
   -webkit-appearance: button; /* 3 */
@@ -340,8 +340,8 @@ input {
  * 2. Remove excess padding in IE 8/9/10.
  */
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type='checkbox'],
+input[type='radio'] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
@@ -352,8 +352,8 @@ input[type="radio"] {
  * decrement button to change from `default` to `text`.
  */
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -363,7 +363,7 @@ input[type="number"]::-webkit-outer-spin-button {
  *    (include `-moz` to future-proof).
  */
 
-input[type="search"] {
+input[type='search'] {
   -webkit-box-sizing: content-box; /* 1 */
      -moz-box-sizing: content-box;
           box-sizing: content-box; /* 2 */
@@ -377,8 +377,8 @@ input[type="search"] {
  * padding (and `textfield` appearance).
  */
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -441,43 +441,135 @@ th {
 /* Nerds project
    ========================================================================== */
 @font-face {
+  font-weight: 100;
   font-family: Roboto;
+  font-style: normal;
+
+  src: local('Roboto Thin'),
+  local('Roboto-Thin'),
+  url(../fonts/robotothin.woff2) format('woff2'),
+  url(../fonts/robotothin.woff) format('woff');
+}
+
+@font-face {
+  font-weight: 100;
+  font-family: Roboto;
+  font-style: italic;
+
+  src: local('Roboto Thin Italic'),
+  local('Roboto-ThinItalic'),
+  url(../fonts/robotothinitalic.woff2) format('woff2'),
+  url(../fonts/robotothinitalic.woff) format('woff');
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: Roboto;
+  font-style: normal;
+
+  src: local('Roboto Light'),
+  local('Roboto-Light'),
+  url(../fonts/robotolight.woff2) format('woff2'),
+  url(../fonts/robotolight.woff) format('woff');
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: Roboto;
+  font-style: italic;
+
+  src: local('Roboto Light Italic'),
+  local('Roboto-LightItalic'),
+  url(../fonts/robotolightitalic.woff2) format('woff2'),
+  url(../fonts/robotolightitalic.woff) format('woff');
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: Roboto;
+  font-style: normal;
+
   src: local('Roboto'),
   local('Roboto-Regular'),
   url(../fonts/roboto.woff2) format('woff2'),
   url(../fonts/roboto.woff) format('woff');
-  font-weight: 400;
-  font-style: normal;
 }
 
 @font-face {
+  font-weight: 400;
   font-family: Roboto;
+  font-style: italic;
+
   src: local('Roboto Italic'),
   local('Roboto-Italic'),
   url(../fonts/robotoitalic.woff2) format('woff2'),
   url(../fonts/robotoitalic.woff) format('woff');
-  font-weight: 400;
-  font-style: italic;
 }
 
 @font-face {
+  font-weight: 500;
   font-family: Roboto;
+  font-style: normal;
+
+  src: local('Roboto Medium'),
+  local('Roboto-Medium'),
+  url(../fonts/robotomedium.woff2) format('woff2'),
+  url(../fonts/robotomedium.woff) format('woff');
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: Roboto;
+  font-style: italic;
+
+  src: local('Roboto Medium Italic'),
+  local('Roboto-MediumItalic'),
+  url(../fonts/robotomediumitalic.woff2) format('woff2'),
+  url(../fonts/robotomediumitalic.woff) format('woff');
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: Roboto;
+  font-style: normal;
+
   src: local('Roboto Bold'),
   local('Roboto-Bold'),
   url(../fonts/robotobold.woff2) format('woff2'),
   url(../fonts/robotobold.woff) format('woff');
-  font-weight: 700;
-  font-style: normal;
 }
 
 @font-face {
+  font-weight: 700;
   font-family: Roboto;
+  font-style: italic;
+
   src: local('Roboto Bold Italic'),
   local('Roboto-BoldItalic'),
   url(../fonts/robotobolditalic.woff2) format('woff2'),
   url(../fonts/robotobolditalic.woff) format('woff');
-  font-weight: 700;
+}
+
+@font-face {
+  font-weight: 900;
+  font-family: Roboto;
+  font-style: normal;
+
+  src: local('Roboto Black'),
+  local('Roboto-Black'),
+  url(../fonts/robotoblack.woff2) format('woff2'),
+  url(../fonts/robotoblack.woff) format('woff');
+}
+
+@font-face {
+  font-weight: 900;
+  font-family: Roboto;
   font-style: italic;
+
+  src: local('Roboto Black Italic'),
+  local('Roboto-BlackItalic'),
+  url(../fonts/robotoblackitalic.woff2) format('woff2'),
+  url(../fonts/robotoblackitalic.woff) format('woff');
 }
 
 html,
@@ -528,6 +620,7 @@ h4 {
   line-height: 30px;
   color: #000000;
 }
+
 img {
   min-width: 100%;
   height: auto;
@@ -550,7 +643,7 @@ img {
 
 .clearfix:before,
 .clearfix:after {
-  content: "";
+  content: '';
 
   display: table;
 }
@@ -613,7 +706,7 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   vertical-align: top;
 }
 
@@ -642,7 +735,7 @@ img {
 }
 
 .main-navigation .active a::after {
-  content: "";
+  content: '';
   position: absolute;
   right: 0;
   bottom: 0;
@@ -664,7 +757,7 @@ img {
 }
 
 .main-navigation .active a:active::after {
-  content: "";
+  content: '';
   position: absolute;
   right: 0;
   bottom: 0;
@@ -691,7 +784,7 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   vertical-align: top;
   color: #000000;
   text-transform: uppercase;
@@ -709,7 +802,7 @@ img {
 }
 
 .basket-icon::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 7px;
   left: 0;
@@ -779,7 +872,7 @@ img {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;
 }
 
@@ -791,7 +884,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #283136;
 }
 
@@ -802,7 +895,7 @@ img {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #ffffff;
 
   background-color: #fb565a;
@@ -844,9 +937,9 @@ img {
   transition: background-color 0.2s;
 }
 
-#btn-1:checked ~ .slider-controls label[for="btn-1"],
-#btn-2:checked ~ .slider-controls label[for="btn-2"],
-#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+#btn-1:checked ~ .slider-controls label[for='btn-1'],
+#btn-2:checked ~ .slider-controls label[for='btn-2'],
+#btn-3:checked ~ .slider-controls label[for='btn-3'] {
   background-color: #666666;
 }
 
@@ -935,7 +1028,7 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
@@ -946,7 +1039,7 @@ img {
   font-weight: 400;
   font-size: 15px;
   line-height: 22px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #283136;
 }
 
@@ -957,7 +1050,7 @@ img {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   vertical-align: top;
   color: #ffffff;
   text-transform: uppercase;
@@ -1028,7 +1121,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #283136;
 }
 
@@ -1041,7 +1134,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #283136;
 }
 
@@ -1052,7 +1145,7 @@ img {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;
 }
 
@@ -1069,7 +1162,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #283136;
   text-transform: uppercase;
 }
@@ -1089,7 +1182,7 @@ img {
 }
 
 .about-services li::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 11px;
   left: -35px;
@@ -1125,7 +1218,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 9px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
 
@@ -1133,7 +1226,7 @@ img {
 }
 
 .founded:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 11px;
   left: 0;
@@ -1153,7 +1246,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #283136;
   text-transform: uppercase;
 }
@@ -1175,7 +1268,7 @@ img {
 }
 
 .about-description li::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 11px;
   left: -35px;
@@ -1290,7 +1383,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   text-align: center;
   color: #666666;
 
@@ -1306,7 +1399,7 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   text-align: left;
   color: #000000;
   text-transform: uppercase;
@@ -1341,7 +1434,7 @@ img {
   font-weight: 700;
   font-size: 12px;
   line-height: 18px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #ffffff;
 }
 
@@ -1418,7 +1511,7 @@ img {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;
 }
 
@@ -1444,7 +1537,7 @@ img {
 
   font-weight: 400;
   font-size: 40px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   text-align: center;
   color: #000000;
   text-transform: uppercase;
@@ -1478,7 +1571,7 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
@@ -1548,7 +1641,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #283136;
   text-transform: uppercase;
 }
@@ -1586,7 +1679,7 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
@@ -1602,7 +1695,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   vertical-align: top;
   color: #283136;
 
@@ -1621,7 +1714,7 @@ img {
 }
 
 .radio::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 15px;
   left: 0;
@@ -1639,7 +1732,7 @@ img {
 }
 
 .radio input:checked ~ .control-indicator::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 23px;
   left: 8px;
@@ -1675,7 +1768,7 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
@@ -1691,7 +1784,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   vertical-align: top;
   color: #283136;
 
@@ -1710,7 +1803,7 @@ img {
 }
 
 .checkbox::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 15px;
   left: 0;
@@ -1728,7 +1821,7 @@ img {
 }
 
 .checkbox input:checked ~ .control-indicator::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 21px;
   left: 7px;
@@ -1751,7 +1844,7 @@ img {
 }
 
 .checkbox input:checked ~ .control-indicator::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 15px;
   left: 15px;
@@ -1829,7 +1922,7 @@ img {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
@@ -1841,7 +1934,7 @@ img {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   vertical-align: top;
   color: #000000;
   text-transform: uppercase;
@@ -1870,7 +1963,7 @@ img {
 }
 
 .catalog-sort-content a:after {
-  content: "";
+  content: '';
   position: absolute;
   right: 15px;
   bottom: 22px;
@@ -1996,7 +2089,7 @@ img {
 }
 
 .miniature::before {
-  content: "";
+  content: '';
 
   display: inline-block;
   width: 240px;
@@ -2043,7 +2136,7 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
@@ -2057,7 +2150,7 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   text-align: center;
   color: #283136;
 }
@@ -2070,7 +2163,7 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 9px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   vertical-align: top;
   text-align: center;
   color: #ffffff;
@@ -2123,7 +2216,7 @@ img {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   vertical-align: top;
   color: #000000;
   text-transform: uppercase;
@@ -2208,7 +2301,7 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;;
 }
 
@@ -2222,7 +2315,7 @@ img {
   margin-right: 0;
 }
 
-.feedback-form input[type="text"],
+.feedback-form input[type='text'],
 .feedback-form textarea {
   display: block;
   width: 186px;
@@ -2232,7 +2325,7 @@ img {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
 
@@ -2273,7 +2366,7 @@ img {
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   vertical-align: top;
   color: #000000;
 
