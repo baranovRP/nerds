@@ -294,10 +294,10 @@ select {
  */
 
 button,
-html input[type="button"],
+html input[type='button'],
 /* 1 */
-input[type="reset"],
-input[type="submit"] {
+input[type='reset'],
+input[type='submit'] {
   cursor: pointer; /* 2 */
 
   -webkit-appearance: button; /* 3 */
@@ -340,8 +340,8 @@ input {
  * 2. Remove excess padding in IE 8/9/10.
  */
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type='checkbox'],
+input[type='radio'] {
   box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
@@ -352,8 +352,8 @@ input[type="radio"] {
  * decrement button to change from `default` to `text`.
  */
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -363,7 +363,7 @@ input[type="number"]::-webkit-outer-spin-button {
  *    (include `-moz` to future-proof).
  */
 
-input[type="search"] {
+input[type='search'] {
   -webkit-box-sizing: content-box; /* 1 */
      -moz-box-sizing: content-box;
           box-sizing: content-box; /* 2 */
@@ -377,8 +377,8 @@ input[type="search"] {
  * padding (and `textfield` appearance).
  */
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -461,27 +461,27 @@ body {
 }
 
 h1 {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 40px;
   color: #000000;
 }
 
 h2 {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 22px;
   color: #283136;
 }
 
 h3 {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   line-height: 18px;
   color: #283136;
 }
 
 h4 {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 30px;
   color: #000000;
@@ -509,7 +509,7 @@ h4 {
 
 .clearfix:before,
 .clearfix:after {
-  content: "";
+  content: '';
 
   display: table;
 }
@@ -569,16 +569,20 @@ h4 {
   padding: 0;
   padding-right: 43px;
 
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   line-height: 30px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   vertical-align: top;
 }
 
 .main-navigation a {
   display: block;
 
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
@@ -601,7 +605,7 @@ h4 {
 }
 
 .main-navigation .active a::after {
-  content: "";
+  content: '';
   position: absolute;
   right: 0;
   bottom: 0;
@@ -623,7 +627,7 @@ h4 {
 }
 
 .main-navigation .active a:active::after {
-  content: "";
+  content: '';
   position: absolute;
   right: 0;
   bottom: 0;
@@ -647,10 +651,10 @@ h4 {
   margin-left: 36px;
   padding-left: 28px;
 
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   line-height: 30px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   vertical-align: top;
   color: #000000;
   text-transform: uppercase;
@@ -668,7 +672,7 @@ h4 {
 }
 
 .basket-icon::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 7px;
   left: 0;
@@ -735,10 +739,10 @@ h4 {
   padding-top: 20px;
   padding-bottom: 20px;
 
-  font-weight: 400;
+  font-weight: 500;
   font-size: 36px;
   line-height: 36px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;
 }
 
@@ -747,10 +751,10 @@ h4 {
   padding-top: 0;
   padding-bottom: 9px;
 
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 22px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #283136;
 }
 
@@ -758,10 +762,10 @@ h4 {
   margin-bottom: 81px;
   padding: 10px 70px;
 
-  font-weight: 400;
+  font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #ffffff;
 
   background-color: #fb565a;
@@ -803,9 +807,9 @@ h4 {
   transition: background-color 0.2s;
 }
 
-#btn-1:checked ~ .slider-controls label[for="btn-1"],
-#btn-2:checked ~ .slider-controls label[for="btn-2"],
-#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+#btn-1:checked ~ .slider-controls label[for='btn-1'],
+#btn-2:checked ~ .slider-controls label[for='btn-2'],
+#btn-3:checked ~ .slider-controls label[for='btn-3'] {
   background-color: #666666;
 }
 
@@ -891,10 +895,10 @@ h4 {
   padding-right: 0;
   padding-left: 0;
 
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
   line-height: 30px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
@@ -902,10 +906,10 @@ h4 {
 .service-description {
   margin-bottom: 25px;
 
-  font-weight: 400;
+  font-weight: 500;
   font-size: 15px;
   line-height: 22px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #283136;
 }
 
@@ -913,10 +917,10 @@ h4 {
   display: inline-block;
   padding: 10px 40px;
 
-  font-weight: 400;
+  font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   vertical-align: top;
   color: #ffffff;
   text-transform: uppercase;
@@ -984,10 +988,10 @@ h4 {
   margin-top: 17px;
   margin-right: 20px;
 
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 22px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #283136;
 }
 
@@ -997,10 +1001,10 @@ h4 {
   margin: 0;
   margin-top: 8px;
 
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 22px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #283136;
 }
 
@@ -1008,27 +1012,32 @@ h4 {
   margin: 0;
   padding: 0;
 
-  font-weight: 400;
+  font-weight: 500;
   font-size: 36px;
   line-height: 36px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;
 }
 
-.about-title > p {
+.about-orders p {
   padding-top: 3px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 .about-services-title {
   margin: 0;
   margin-bottom: 22px;
   padding: 0;
-  padding-top: 31px;
+  padding-top: 30px;
 
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 22px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #283136;
   text-transform: uppercase;
 }
@@ -1045,10 +1054,15 @@ h4 {
 
   margin-bottom: 22px;
   margin-left: 36px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 .about-services li::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 11px;
   left: -35px;
@@ -1081,10 +1095,10 @@ h4 {
   padding-right: 10px;
   padding-left: 10px;
 
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 9px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
 
@@ -1092,7 +1106,7 @@ h4 {
 }
 
 .founded:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 11px;
   left: 0;
@@ -1109,10 +1123,10 @@ h4 {
   padding: 0;
   padding-left: 10px;
 
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 22px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #283136;
   text-transform: uppercase;
 }
@@ -1131,10 +1145,15 @@ h4 {
 
   margin-bottom: 22px;
   margin-left: 36px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 .about-description li::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 11px;
   left: -35px;
@@ -1246,10 +1265,10 @@ h4 {
   padding: 25px 20px;
   padding-top: 10px;
 
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   text-align: center;
   color: #666666;
 
@@ -1265,15 +1284,19 @@ h4 {
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   text-align: left;
   color: #000000;
   text-transform: uppercase;
 }
 
-.contacts-title + span {
+.contacts span {
   display: block;
 
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Roboto, Arial, sans-serif;
   text-align: left;
 }
 
@@ -1287,6 +1310,10 @@ h4 {
 }
 
 .contacts-phone a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Roboto, Arial, sans-serif;
   color: #666666;
   text-decoration: none;
 }
@@ -1297,10 +1324,10 @@ h4 {
   margin-top: 5px;
   padding: 10px 0;
 
-  font-weight: 700;
+  font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #ffffff;
 }
 
@@ -1374,17 +1401,23 @@ h4 {
   margin: 0;
   padding: 0;
 
-  font-weight: 400;
+  font-weight: 500;
   font-size: 36px;
   line-height: 36px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;
 }
 
-.footer-title + p {
+.footer-slogan p {
   margin: 0;
-  margin-top: 16px;
+  margin-top: 12px;
   margin-bottom: 6px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: Roboto, Arial, sans-serif;
+  color: #283136;
 }
 
 /* END index page*/
@@ -1401,9 +1434,9 @@ h4 {
 .main-header-title {
   margin-left: -13px;
 
-  font-weight: 400;
+  font-weight: 500;
   font-size: 40px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   text-align: center;
   color: #000000;
   text-transform: uppercase;
@@ -1434,10 +1467,10 @@ h4 {
 }
 
 .filter-price-title {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
   line-height: 30px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
@@ -1504,12 +1537,19 @@ h4 {
 }
 
 .price-controls {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 22px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #283136;
   text-transform: uppercase;
+}
+
+.price-controls label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 .min-price,
@@ -1518,6 +1558,10 @@ h4 {
   margin-left: 7px;
   padding: 8px 11px;
 
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: Roboto, Arial, sans-serif;
   text-align: center;
 
   background-color: #f1f1f1;
@@ -1542,10 +1586,10 @@ h4 {
 }
 
 .filter-grid-title {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
   line-height: 30px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
@@ -1555,13 +1599,13 @@ h4 {
 
   display: inline-block;
   padding-top: 16px;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
   padding-left: 35px;
 
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   vertical-align: top;
   color: #283136;
 
@@ -1580,7 +1624,7 @@ h4 {
 }
 
 .radio::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 15px;
   left: 0;
@@ -1598,7 +1642,7 @@ h4 {
 }
 
 .radio input:checked ~ .control-indicator::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 23px;
   left: 8px;
@@ -1619,7 +1663,7 @@ h4 {
 
 /* START Filter features */
 .filter-features-title {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
   line-height: 30px;
   color: #000000;
@@ -1627,14 +1671,14 @@ h4 {
 }
 
 .filter-features {
-  margin-top: 38px;
+  margin-top: 40px;
 }
 
 .filter-features-title {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
   line-height: 30px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
@@ -1644,13 +1688,13 @@ h4 {
 
   display: inline-block;
   padding-top: 16px;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
   padding-left: 35px;
 
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   vertical-align: top;
   color: #283136;
 
@@ -1669,7 +1713,7 @@ h4 {
 }
 
 .checkbox::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 15px;
   left: 0;
@@ -1687,7 +1731,7 @@ h4 {
 }
 
 .checkbox input:checked ~ .control-indicator::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 21px;
   left: 7px;
@@ -1710,7 +1754,7 @@ h4 {
 }
 
 .checkbox input:checked ~ .control-indicator::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 15px;
   left: 15px;
@@ -1740,10 +1784,10 @@ h4 {
 }
 
 .catalog-filters .btn {
-  margin-top: 50px;
+  margin-top: 56px;
   padding: 10px 45px;
 
-  font-weight: 700;
+  font-weight: 500;
   font-size: 12px;
   line-height: 18px;
   font-family: Roboto, Arial, sans-serif;
@@ -1785,10 +1829,10 @@ h4 {
 }
 
 .catalog-sort-title {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
@@ -1797,12 +1841,11 @@ h4 {
   display: inline-block;
   margin-right: 5px;
 
-  font-weight: 400;
+  font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   vertical-align: top;
-  color: #000000;
   text-transform: uppercase;
 }
 
@@ -1812,6 +1855,11 @@ h4 {
   margin-right: 12px;
   padding: 25px 15px;
 
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: Roboto, Arial, sans-serif;
+  color: #000000;
   text-decoration: none;
 
   opacity: 0.3;
@@ -1829,7 +1877,7 @@ h4 {
 }
 
 .catalog-sort-content a:after {
-  content: "";
+  content: '';
   position: absolute;
   right: 15px;
   bottom: 22px;
@@ -1955,7 +2003,7 @@ h4 {
 }
 
 .miniature::before {
-  content: "";
+  content: '';
 
   display: inline-block;
   width: 240px;
@@ -1999,10 +2047,10 @@ h4 {
   padding-top: 31px;
   padding-bottom: 0;
 
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
   line-height: 24px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
@@ -2013,10 +2061,10 @@ h4 {
   padding-top: 12px;
   padding-bottom: 29px;
 
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
   line-height: 18px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   text-align: center;
   color: #283136;
 }
@@ -2026,10 +2074,10 @@ h4 {
   width: 160px;
   padding-bottom: 18px;
 
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
   line-height: 9px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   vertical-align: top;
   text-align: center;
   color: #ffffff;
@@ -2038,6 +2086,11 @@ h4 {
 
 .price .btn {
   padding: 14px 33px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 9px;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 .price .btn:hover {
@@ -2079,10 +2132,10 @@ h4 {
   margin-right: 7px;
   padding: 10px 15px;
 
-  font-weight: 400;
+  font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   vertical-align: top;
   color: #000000;
   text-transform: uppercase;
@@ -2164,10 +2217,10 @@ h4 {
 }
 
 .feedback-form {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;;
 }
 
@@ -2175,23 +2228,35 @@ h4 {
   width: 220px;
   margin: 0;
   margin-right: 20px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 .feedback-form .text.to-right {
   margin-right: 0;
 }
 
-.feedback-form input[type="text"],
+.feedback-form .textarea {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.feedback-form input[type='text'],
 .feedback-form textarea {
   display: block;
   width: 186px;
   margin: 10px 0;
   padding: 12px 15px;
 
-  font-weight: 400;
+  font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
 
@@ -2229,10 +2294,10 @@ h4 {
   width: 220px;
   padding: 10px 0;
 
-  font-weight: 400;
+  font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  font-family: "Roboto Medium", Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
   vertical-align: top;
   color: #000000;
 
